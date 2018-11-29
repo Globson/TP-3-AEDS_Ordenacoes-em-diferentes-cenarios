@@ -1,12 +1,9 @@
 //
 // Autores: Elida Emilly - 3012, Estela Miranda - 3305, Yuri de Faria - 3373
 //
-#ifndef TIPOVOO_H
-#define TIPOVOO_H
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
 /* Implementação do TAD Voo, com as características definidas para cada voo*/
 typedef struct {
     int Id;
@@ -20,6 +17,7 @@ typedef struct {
 /* Implementação das operações para acessar e alterar os dados */
 /* Implementação da Inicialização da Estrutura de Voo */
 void IniciarVoo(TipoVoo *Voo);
+void LetraAleatoria(int n, char *l);
 
 /* Funções de Alteração e Acesso aos dados do Voo */
 int getId(TipoVoo x);
@@ -34,4 +32,3 @@ char* getAeroporto_pouso(TipoVoo x);
 void setAeroporto_pouso(TipoVoo* x, char *Aero);
 int getId_pista(TipoVoo x);
 void setId_pista(TipoVoo* x, char novoid);
-#endif

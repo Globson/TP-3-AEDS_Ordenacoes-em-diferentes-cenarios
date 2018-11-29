@@ -3,8 +3,6 @@
 //
 #include "../Headers/ItemMatriz.h"
 
-#ifdef MATRIZVOOS_H
-#define MATRIZVOOS_H
 
 /* Estrutura para a TAD Matriz, com os dadosnecessários para a Matriz */
 typedef struct {
@@ -29,4 +27,3 @@ void MenorNumero(TipoMatriz matriz);
 void MaisRecente(TipoMatriz matriz);
 void MenosRecente(TipoMatriz matriz);
 void Espaca(TipoMatriz matriz);
-#endif

@@ -160,25 +160,20 @@ int main() {
             /* Recebendo Horário de Decolagem e Pouso, utilizando da
                operação de alteração dos itens */
             printf("Horario de Decolagem: ");
-            Hr[0] = rand()%9;
-            Hr[1] = rand()%9;
-            Hr[2] = ':';
-            Hr[3] = rand()%9;
-            Hr[4] = rand()%9;
+            strcpy(Hr, "12");
             setHr_dec(&voo, Hr);
+            printf("%s\n", Hr);
 
             printf("Horario de Pouso: ");
-            Hr1[0] = rand()%9;
-            Hr1[1] = rand()%9;
-            Hr1[2] = ':';
-            Hr1[3] = rand()%9;
-            Hr1[4] = rand()%9;
+            scanf("%s", Hr1);
             setHr_pouso(&voo, Hr1);
+            printf("%s\n", Hr1);
 
             /* Recebendo Aeroporto de Decolagem e Pouso, utilizando da
                operação de alteração dos itens */
             printf("Aeroporto de Decolagem: ");
-            scanf("%s", Aero);
+            LetraAleatoria(20, &Aero);
+            printf("%s\n", Aero);
             setAeroporto_dec(&voo, Aero);
 
             printf("Aeroporto Pouso: ");

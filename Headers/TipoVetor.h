@@ -1,8 +1,5 @@
 #include "../Headers/MatrizVoos.h"
 
-#ifndef TIPOVETOR_H
-#define TIPOVETOR_H
-
 //Chamada dos algoritmos de ordenação
 void BubbleSort (TipoMatriz *Matriz, int TamanhoVetor);
 void SelectSort (TipoMatriz *Matriz, int TamanhoVetor);
@@ -16,4 +13,3 @@ void QuickSort (TipoMatriz *Matriz, int TamanhoVetor);
 
 
 void HeapSort (TipoMatriz *Matriz, int TamanhoVetor);
-#endif

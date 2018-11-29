@@ -2,8 +2,7 @@
 // Autores: Elida Emilly - 3012, Estela Miranda - 3305, Yuri de Faria - 3373
 //
 #include "../Headers/TipoVoo.h"
-#ifndef LISTADEVOOS_H
-#define LISTADEVOOS_H
+
 
 /* Implementação da Lista Encadeada com Cabeça dos Itens da TAD Voo */
 typedef struct TipoCelula *TipoApontador;
@@ -25,4 +24,3 @@ int ProcuraVoo(int id, TipoLista *Lista, TipoVoo *Voo);
 void ProcuraVooHor(char *hora, TipoLista *Lista, TipoVoo *Voo);
 void ProcuraVooHorFinal(char *hora, TipoLista *Lista, TipoVoo *Voo);
 void Imprime(TipoLista Lista);
-#endif

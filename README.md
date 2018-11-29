@@ -5,7 +5,7 @@
 
 
 
-O Projeto apresenta um algoritmo que compara o desempenho de algoritmos famosos de ordenação em diferentes cenários.
+O projeto apresenta um algoritmo que compara o desempenho de algoritmos famosos de ordenação em diferentes cenários.
 
 ## Instalação
 

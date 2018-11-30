@@ -1,3 +1,4 @@
+// Autores: Samuel Pedro - 3494, Estela Miranda - 3305, Yuri Dimitre - 3485.
 #include "Headers/TipoVetor.h"
 
 int main() {
@@ -12,15 +13,17 @@ int main() {
     char auxAero[2], auxAero1[2], auxAero2[2];
 
     while(1){
-      printf("===================== Menu =====================\n");
+      printf("\n===================== Menu =====================\n");
       printf("    1 - Automatico   2 - Arquivo   3 - Sair\n");
       printf("================================================\n");
+      printf("Digite a opcao desejada:");
       scanf("%d", &n);
 
       if(n == 1){
         printf("===================== Menu =====================\n");
         printf("              Escolha um Cenario\n");
         printf("================================================\n");
+        printf("Entre:");
         scanf("%d", &n);
 
         if(n == 1){
@@ -260,6 +263,7 @@ int main() {
           printf(" 4 - ShellSort    5 - QuickSort   6 - HeapSort\n");
           printf(" 7 - Sair\n");
           printf("================================================\n");
+          printf("Digite a opcao desejada:");
           scanf("%d", &m);
 
           if(m == 1){
@@ -327,8 +331,19 @@ int main() {
           }
         }
 
-      } else if(n == 2){
-
+      } else if(n == 2){  //Samuelzim começou a parada de arquivo// n to sabendo como ler aquela parada X0 // #YURICABAÇO
+          FILE *f;
+          char nome_arquivo[20];
+          printf("\nDigite o nome do arquivo que deseja abrir:");
+          scanf("%s",nome_arquivo);
+          f = fopen(nome_arquivo,"r");
+          if(f == NULL){
+            printf("\n\tErro!Nao foi possivel abrir arquivo!\n");}
+            else{
+              printf("\n\tArquivo aberto com sucesso!\n");
+              //TODO LEITURA DO ARQUIVO E CHAMADA DE OPERAÇÕES//
+              fclose(f);
+            }
       } else if(n == 3){
         int f = 0;
       printf("\nDeseja realmente finalizar a execucao do programa?\n\t1.Sim\n\t2.Nao\n");
@@ -342,6 +357,9 @@ int main() {
         break;}
       if(f == 2){
         printf("\n\tFinalizacao cancelada!\n");}
+      }
+      else{
+        printf("\nOpcao invalida!\n");
       }
     }
     return 0;

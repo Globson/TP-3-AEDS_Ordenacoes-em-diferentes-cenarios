@@ -17,8 +17,14 @@ void IniciarMatriz(TipoMatriz *matriz){
 
 /* Função para localizar o local da matriz com base na conversão do char da hora de entrada em int */
 int Conversao(char *horario){
-    int num = ((horario[0] - '0')*10) + (horario[1] - '0');
-    return num;
+    if(strlen(horario) == 5){
+      int num = ((horario[0] - '0')*10) + (horario[1] - '0');
+      return num;
+    } else{
+      int num = horario[0] - '0';
+      return num;
+    }
+
 }
 
 /* Função para Inserir novos dados no item determinado da Matriz */

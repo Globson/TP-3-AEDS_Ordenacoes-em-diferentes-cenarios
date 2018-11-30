@@ -1,6 +1,3 @@
-//
-// Autores: Elida Emilly - 3012, Estela Miranda - 3305, Yuri de Faria - 3373
-//
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

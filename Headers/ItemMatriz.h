@@ -1,6 +1,3 @@
-//
-// Autores: Elida Emilly - 3012, Estela Miranda - 3305, Yuri de Faria - 3373
-//
 #include "../Headers/ListaDeVoos.h"
 
 /* Estrutura para TAD Item Matriz, com os dados necessários para a estrutura */

@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <time.h>
 /* Implementação do TAD Voo, com as características definidas para cada voo*/
 typedef struct {
     int Id;

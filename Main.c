@@ -6,7 +6,7 @@ int main() {
     TipoVoo voo;
     TipoMatriz matriz;
     TipoVetor vet, vet1, vet2, vet3, vet4, vet5;
-    srand(time(NULL));
+    srand((unsigned)time(NULL));
 
     /* Declaração de variavéis auxiliares */
     int m, pista, n, TamanhoVetor;

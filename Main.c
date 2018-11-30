@@ -330,7 +330,18 @@ int main() {
       } else if(n == 2){
 
       } else if(n == 3){
-        break;
+        int f = 0;
+      printf("\nDeseja realmente finalizar a execucao do programa?\n\t1.Sim\n\t2.Nao\n");
+      while(f != 1 && f != 2){
+        printf("Digite a opcao desejada:");
+        scanf("%d",&f);
+        if(f != 1 && f != 2){
+          printf("Opcao invalida!\n");}}
+      if(f == 1){
+        printf("\n\t\t  -----------------------------\n\n\t\t   Desenvolvedores:\n\t\t    Yuri Dimitre - 3485\n\t\t    Samuel Sena - 3494\n\t\t    Estela Miranda - 3305\n\n\t\t  OBRIGADO POR UTILIZAR O PROGRAMA!\n");
+        break;}
+      if(f == 2){
+        printf("\n\tFinalizacao cancelada!\n");}
       }
     }
     return 0;

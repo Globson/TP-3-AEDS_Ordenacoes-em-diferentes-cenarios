@@ -1006,18 +1006,201 @@ int main() {
         }
 
       } else if(n == 2){  //Samuelzim começou a parada de arquivo// n to sabendo como ler aquela parada X0 // #YURICABAÇO
-          FILE *f;
-          char nome_arquivo[20];
-          printf("\nDigite o nome do arquivo que deseja abrir:");
-          scanf("%s",nome_arquivo);
-          f = fopen(nome_arquivo,"r");
-          if(f == NULL){
-            printf("\n\tErro!Nao foi possivel abrir arquivo!\n");}
-            else{
-              printf("\n\tArquivo aberto com sucesso!\n");
-              //TODO LEITURA DO ARQUIVO E CHAMADA DE OPERAÇÕES//
-              fclose(f);
+        FILE *f;
+        char nome_arquivo[20], palavra[10];
+        int VetorIndice[73], n;
+
+        printf("===================== Menu =====================\n");
+        printf("              Escolha um Cenario\n");
+        printf("================================================\n");
+        printf("Entre:");
+        scanf("%d", &n);
+        printf("\nDigite o nome do arquivo que deseja abrir:");
+        scanf("%s",nome_arquivo);
+
+        f = fopen(nome_arquivo,"r");
+        if(f == NULL){
+        printf("\n\tErro!Nao foi possivel abrir arquivo!\n");}
+        else{
+          printf("\n\tArquivo aberto com sucesso!\n");
+          //TODO LEITURA DO ARQUIVO E CHAMADA DE OPERAÇÕES//
+
+          if(n == 1){
+            TamanhoVetor = 365;
+            AlocaVetor(&vet, TamanhoVetor);
+            AlocaVetor(&vet1, TamanhoVetor);
+            AlocaVetor(&vet2, TamanhoVetor);
+            AlocaVetor(&vet3, TamanhoVetor);
+            AlocaVetor(&vet4, TamanhoVetor);
+            AlocaVetor(&vet5, TamanhoVetor);
+
+            /*for(int i=0; i<TamanhoVetor; i++){
+                IniciarMatriz(&matriz);
+                vet.ListaIdMatriz[i] = matriz;
+                vet1.ListaIdMatriz[i] = matriz;
+                vet2.ListaIdMatriz[i] = matriz;
+                vet3.ListaIdMatriz[i] = matriz;
+                vet4.ListaIdMatriz[i] = matriz;
+                vet5.ListaIdMatriz[i] = matriz;
+              }*/
+
+            for(int i=0; i<73; i++){
+              fscanf(f, "%s", palavra);
+
+              if(strlen(palavra) == 1){
+                VetorIndice[i] = palavra[0] - '0';
+              } else if(strlen(palavra) == 2){
+                VetorIndice[i] = (palavra[0] - '0')*10 + (palavra[1] - '0');
+              }
             }
+
+            for(int i=0; i<73; i++){
+              for(int j=0; j<10; j++){
+                  IniciarVoo(&voo);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_dec(&voo, Hr);
+                  printf("%s\n", Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_pouso(&voo, Hr);
+                  printf("%s\n", Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_dec(&voo, Aero);
+                  printf("%s\n", Aero);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_dec(&voo, Aero);
+                  printf("%s\n", Aero);
+
+                  fscanf(f, "%s", palavra);
+                  if(strlen(palavra) == 1){
+                    pista = palavra[0] - '0';
+                  } else if(strlen(palavra) == 2){
+                    pista = (palavra[0] - '0')*10 + (palavra[1] - '0');
+                  }
+                  setId_pista(&voo, pista);
+                  printf("%d\n", pista);
+                  printf("\n");
+
+                  /*Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);*/
+              }
+            }
+
+
+
+          } else if(n == 2){
+
+          } else if(n == 3){
+
+          } else if(n == 4){
+
+          } else if(n == 5){
+
+          } else if(n == 6){
+
+          } else if(n == 7){
+
+          } else if(n == 8){
+
+          } else if(n == 9){
+
+          } else if(n == 10){
+
+          } else if(n == 11){
+
+          } else if(n == 12){
+
+          }
+
+          fclose(f);
+        }
+
+        while(1){
+          printf("===================== Menu =====================\n");
+          printf("              Como Deseja Ordenar\n");
+          printf(" 1 - BubbleSort   2 - SelectSort  3 - InsertSort\n");
+          printf(" 4 - ShellSort    5 - QuickSort   6 - HeapSort\n");
+          printf(" 7 - Sair\n");
+          printf("================================================\n");
+          printf("Digite a opcao desejada:");
+          scanf("%d", &m);
+
+          if(m == 1){
+            compara = 0;
+            movimenta = 0;
+            BubbleSort(&vet, TamanhoVetor, &compara, &movimenta);
+            printf("===================== Menu =====================\n");
+            printf("              Ordenado em BubbleSort\n");
+            printf("Comparações: %d\n", compara);
+            printf("Movimentações: %d\n", movimenta);
+            printf("================================================\n");
+
+          } else if(m == 2){
+            compara = 0;
+            movimenta = 0;
+            SelectSort(&vet1, TamanhoVetor, &compara, &movimenta);
+            printf("===================== Menu =====================\n");
+            printf("              Ordenado em SelectSort\n");
+            printf("Comparações: %d\n", compara);
+            printf("Movimentações: %d\n", movimenta);
+            printf("================================================\n");
+
+          } else if(m == 3){
+            compara = 0;
+            movimenta = 0;
+            InsertSort(&vet2, TamanhoVetor, &compara, &movimenta);
+            printf("===================== Menu =====================\n");
+            printf("              Ordenado em InsertSort\n");
+            printf("Comparações: %d\n", compara);
+            printf("Movimentações: %d\n", movimenta);
+            printf("================================================\n");
+
+          } else if(m == 4){
+            compara = 0;
+            movimenta = 0;
+            ShellSort(&vet3, TamanhoVetor, &compara, &movimenta);
+            printf("===================== Menu =====================\n");
+            printf("              Ordenado em ShellSort\n");
+            printf("Comparações: %d\n", compara);
+            printf("Movimentações: %d\n", movimenta);
+            printf("================================================\n");
+
+          } else if(m == 5){
+            compara = 0;
+            movimenta = 0;
+            QuickSort(&vet4, TamanhoVetor, &compara, &movimenta);
+            printf("===================== Menu =====================\n");
+            printf("              Ordenado em QuickSort\n");
+            printf("Comparações: %d\n", compara);
+            printf("Movimentações: %d\n", movimenta);
+            printf("================================================\n");
+
+          } else if(m == 6){
+            compara = 0;
+            movimenta = 0;
+            HeapSort(&vet5, TamanhoVetor, &compara, &movimenta);
+            printf("===================== Menu =====================\n");
+            printf("              Ordenado em HeapSort\n");
+            printf("Comparações: %d\n", compara);
+            printf("Movimentações: %d\n", movimenta);
+            printf("================================================\n");
+
+          } else if(m == 7){
+            break;
+          }
+        }
+
       } else if(n == 3){
         int f = 0;
       printf("\nDeseja realmente finalizar a execucao do programa?\n\t1.Sim\n\t2.Nao\n");

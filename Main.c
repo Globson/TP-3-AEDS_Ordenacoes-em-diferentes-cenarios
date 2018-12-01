@@ -10,7 +10,7 @@ int main() {
 
     /* Declaração de variavéis auxiliares */
     int m, pista, n, TamanhoVetor;
-    int compara, movimenta;
+    long int compara, movimenta;
     char auxHr, auxHr1, auxHr2, auxHr3,auxHr4, Hr[10], Aero[50], Aero1[50];
     char auxAero[2], auxAero1[2], auxAero2[2];
 
@@ -946,8 +946,8 @@ int main() {
             BubbleSort(&vet, TamanhoVetor, &compara, &movimenta);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em BubbleSort\n");
-            printf("Comparações: %d\n", compara);
-            printf("Movimentações: %d\n", movimenta);
+            printf("Comparações: %ld\n", compara);
+            printf("Movimentações: %ld\n", movimenta);
             printf("================================================\n");
 
           } else if(m == 2){
@@ -956,8 +956,8 @@ int main() {
             SelectSort(&vet1, TamanhoVetor, &compara, &movimenta);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em SelectSort\n");
-            printf("Comparações: %d\n", compara);
-            printf("Movimentações: %d\n", movimenta);
+            printf("Comparações: %ld\n", compara);
+            printf("Movimentações: %ld\n", movimenta);
             printf("================================================\n");
 
           } else if(m == 3){
@@ -966,8 +966,8 @@ int main() {
             InsertSort(&vet2, TamanhoVetor, &compara, &movimenta);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em InsertSort\n");
-            printf("Comparações: %d\n", compara);
-            printf("Movimentações: %d\n", movimenta);
+            printf("Comparações: %ld\n", compara);
+            printf("Movimentações: %ld\n", movimenta);
             printf("================================================\n");
 
           } else if(m == 4){
@@ -976,8 +976,8 @@ int main() {
             ShellSort(&vet3, TamanhoVetor, &compara, &movimenta);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em ShellSort\n");
-            printf("Comparações: %d\n", compara);
-            printf("Movimentações: %d\n", movimenta);
+            printf("Comparações: %ld\n", compara);
+            printf("Movimentações: %ld\n", movimenta);
             printf("================================================\n");
 
           } else if(m == 5){
@@ -986,8 +986,8 @@ int main() {
             QuickSort(&vet4, TamanhoVetor, &compara, &movimenta);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em QuickSort\n");
-            printf("Comparações: %d\n", compara);
-            printf("Movimentações: %d\n", movimenta);
+            printf("Comparações: %ld\n", compara);
+            printf("Movimentações: %ld\n", movimenta);
             printf("================================================\n");
 
           } else if(m == 6){
@@ -996,8 +996,8 @@ int main() {
             HeapSort(&vet5, TamanhoVetor, &compara, &movimenta);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em HeapSort\n");
-            printf("Comparações: %d\n", compara);
-            printf("Movimentações: %d\n", movimenta);
+            printf("Comparações: %ld\n", compara);
+            printf("Movimentações: %ld\n", movimenta);
             printf("================================================\n");
 
           } else if(m == 7){
@@ -1072,7 +1072,7 @@ int main() {
 
                   fscanf(f, "%s", palavra);
                   strcpy(Aero, palavra);
-                  setAeroporto_dec(&voo, Aero);
+                  setAeroporto_pouso(&voo, Aero);
 
                   fscanf(f, "%s", palavra);
                   if(strlen(palavra) == 1){
@@ -1088,6 +1088,7 @@ int main() {
                   Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
                   Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
                   Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
+
               }
             }
           } else if(n == 2){
@@ -1116,6 +1117,8 @@ int main() {
                 VetorIndice[i] = palavra[0] - '0';
               } else if(strlen(palavra) == 2){
                 VetorIndice[i] = (palavra[0] - '0')*10 + (palavra[1] - '0');
+              } else if(strlen(palavra) == 3){
+                VetorIndice[i] = (palavra[0] - '0')*100 + (palavra[1] - '0')*10 + (palavra[2] - '0');
               }
             }
 
@@ -1137,7 +1140,7 @@ int main() {
 
                   fscanf(f, "%s", palavra);
                   strcpy(Aero, palavra);
-                  setAeroporto_dec(&voo, Aero);
+                  setAeroporto_pouso(&voo, Aero);
 
                   fscanf(f, "%s", palavra);
                   if(strlen(palavra) == 1){
@@ -1153,29 +1156,711 @@ int main() {
                   Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
                   Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
                   Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
+
+              }
+            }
+          } else if(n == 3){
+            TamanhoVetor = 365;
+            AlocaVetor(&vet, TamanhoVetor);
+            AlocaVetor(&vet1, TamanhoVetor);
+            AlocaVetor(&vet2, TamanhoVetor);
+            AlocaVetor(&vet3, TamanhoVetor);
+            AlocaVetor(&vet4, TamanhoVetor);
+            AlocaVetor(&vet5, TamanhoVetor);
+
+            for(int i=0; i<TamanhoVetor; i++){
+                IniciarMatriz(&matriz);
+                vet.ListaIdMatriz[i] = matriz;
+                vet1.ListaIdMatriz[i] = matriz;
+                vet2.ListaIdMatriz[i] = matriz;
+                vet3.ListaIdMatriz[i] = matriz;
+                vet4.ListaIdMatriz[i] = matriz;
+                vet5.ListaIdMatriz[i] = matriz;
+              }
+
+            for(int i=0; i<73; i++){
+              fscanf(f, "%s", palavra);
+
+              if(strlen(palavra) == 1){
+                VetorIndice[i] = palavra[0] - '0';
+              } else if(strlen(palavra) == 2){
+                VetorIndice[i] = (palavra[0] - '0')*10 + (palavra[1] - '0');
               }
             }
 
-          } else if(n == 3){
+            for(int i=0; i<73; i++){
+              for(int j=0; j<100; j++){
+                  IniciarVoo(&voo);
 
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_dec(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_pouso(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_dec(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_pouso(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  if(strlen(palavra) == 1){
+                    pista = palavra[0] - '0';
+                  } else if(strlen(palavra) == 2){
+                    pista = (palavra[0] - '0')*10 + (palavra[1] - '0');
+                  }
+                  setId_pista(&voo, pista);
+
+                  Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
+
+              }
+            }
           } else if(n == 4){
+            TamanhoVetor = 365;
+            AlocaVetor(&vet, TamanhoVetor);
+            AlocaVetor(&vet1, TamanhoVetor);
+            AlocaVetor(&vet2, TamanhoVetor);
+            AlocaVetor(&vet3, TamanhoVetor);
+            AlocaVetor(&vet4, TamanhoVetor);
+            AlocaVetor(&vet5, TamanhoVetor);
 
+            for(int i=0; i<TamanhoVetor; i++){
+                IniciarMatriz(&matriz);
+                vet.ListaIdMatriz[i] = matriz;
+                vet1.ListaIdMatriz[i] = matriz;
+                vet2.ListaIdMatriz[i] = matriz;
+                vet3.ListaIdMatriz[i] = matriz;
+                vet4.ListaIdMatriz[i] = matriz;
+                vet5.ListaIdMatriz[i] = matriz;
+              }
+
+            for(int i=0; i<TamanhoVetor; i++){
+              fscanf(f, "%s", palavra);
+
+              if(strlen(palavra) == 1){
+                VetorIndice[i] = palavra[0] - '0';
+              } else if(strlen(palavra) == 2){
+                VetorIndice[i] = (palavra[0] - '0')*10 + (palavra[1] - '0');
+              } else if(strlen(palavra) == 3){
+                VetorIndice[i] = (palavra[0] - '0')*100 + (palavra[1] - '0')*10 + (palavra[2] - '0');
+              }
+            }
+
+            for(int i=0; i<TamanhoVetor; i++){
+              for(int j=0; j<100; j++){
+                  IniciarVoo(&voo);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_dec(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_pouso(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_dec(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_pouso(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  if(strlen(palavra) == 1){
+                    pista = palavra[0] - '0';
+                  } else if(strlen(palavra) == 2){
+                    pista = (palavra[0] - '0')*10 + (palavra[1] - '0');
+                  }
+                  setId_pista(&voo, pista);
+
+                  Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
+
+              }
+            }
           } else if(n == 5){
+            TamanhoVetor = 3650;
+            AlocaVetor(&vet, TamanhoVetor);
+            AlocaVetor(&vet1, TamanhoVetor);
+            AlocaVetor(&vet2, TamanhoVetor);
+            AlocaVetor(&vet3, TamanhoVetor);
+            AlocaVetor(&vet4, TamanhoVetor);
+            AlocaVetor(&vet5, TamanhoVetor);
 
+            for(int i=0; i<TamanhoVetor; i++){
+                IniciarMatriz(&matriz);
+                vet.ListaIdMatriz[i] = matriz;
+                vet1.ListaIdMatriz[i] = matriz;
+                vet2.ListaIdMatriz[i] = matriz;
+                vet3.ListaIdMatriz[i] = matriz;
+                vet4.ListaIdMatriz[i] = matriz;
+                vet5.ListaIdMatriz[i] = matriz;
+              }
+
+            for(int i=0; i<730; i++){
+              fscanf(f, "%s", palavra);
+
+              if(strlen(palavra) == 1){
+                VetorIndice[i] = palavra[0] - '0';
+              } else if(strlen(palavra) == 2){
+                VetorIndice[i] = (palavra[0] - '0')*10 + (palavra[1] - '0');
+              } else if(strlen(palavra) == 3){
+                VetorIndice[i] = (palavra[0] - '0')*100 + (palavra[1] - '0')*10 + (palavra[2] - '0');
+              }  else if(strlen(palavra) == 4){
+                VetorIndice[i] = (palavra[0] - '0')*1000 + (palavra[1] - '0')*100 + (palavra[2] - '0')*10 + (palavra[3] - '0');
+              }
+            }
+
+            for(int i=0; i<73; i++){
+              for(int j=0; j<10; j++){
+                  IniciarVoo(&voo);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_dec(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_pouso(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_dec(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_pouso(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  if(strlen(palavra) == 1){
+                    pista = palavra[0] - '0';
+                  } else if(strlen(palavra) == 2){
+                    pista = (palavra[0] - '0')*10 + (palavra[1] - '0');
+                  }
+                  setId_pista(&voo, pista);
+
+                  Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
+
+              }
+            }
           } else if(n == 6){
+            TamanhoVetor = 3650;
+            AlocaVetor(&vet, TamanhoVetor);
+            AlocaVetor(&vet1, TamanhoVetor);
+            AlocaVetor(&vet2, TamanhoVetor);
+            AlocaVetor(&vet3, TamanhoVetor);
+            AlocaVetor(&vet4, TamanhoVetor);
+            AlocaVetor(&vet5, TamanhoVetor);
 
+            for(int i=0; i<TamanhoVetor; i++){
+                IniciarMatriz(&matriz);
+                vet.ListaIdMatriz[i] = matriz;
+                vet1.ListaIdMatriz[i] = matriz;
+                vet2.ListaIdMatriz[i] = matriz;
+                vet3.ListaIdMatriz[i] = matriz;
+                vet4.ListaIdMatriz[i] = matriz;
+                vet5.ListaIdMatriz[i] = matriz;
+              }
+
+            for(int i=0; i<TamanhoVetor; i++){
+              fscanf(f, "%s", palavra);
+
+              if(strlen(palavra) == 1){
+                VetorIndice[i] = palavra[0] - '0';
+              } else if(strlen(palavra) == 2){
+                VetorIndice[i] = (palavra[0] - '0')*10 + (palavra[1] - '0');
+              } else if(strlen(palavra) == 3){
+                VetorIndice[i] = (palavra[0] - '0')*100 + (palavra[1] - '0')*10 + (palavra[2] - '0');
+              }  else if(strlen(palavra) == 4){
+                VetorIndice[i] = (palavra[0] - '0')*1000 + (palavra[1] - '0')*100 + (palavra[2] - '0')*10 + (palavra[3] - '0');
+              }
+            }
+
+            for(int i=0; i<TamanhoVetor; i++){
+              for(int j=0; j<10; j++){
+                  IniciarVoo(&voo);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_dec(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_pouso(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_dec(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_pouso(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  if(strlen(palavra) == 1){
+                    pista = palavra[0] - '0';
+                  } else if(strlen(palavra) == 2){
+                    pista = (palavra[0] - '0')*10 + (palavra[1] - '0');
+                  }
+                  setId_pista(&voo, pista);
+
+                  Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
+
+              }
+            }
           } else if(n == 7){
+            TamanhoVetor = 3650;
+            AlocaVetor(&vet, TamanhoVetor);
+            AlocaVetor(&vet1, TamanhoVetor);
+            AlocaVetor(&vet2, TamanhoVetor);
+            AlocaVetor(&vet3, TamanhoVetor);
+            AlocaVetor(&vet4, TamanhoVetor);
+            AlocaVetor(&vet5, TamanhoVetor);
 
+            for(int i=0; i<TamanhoVetor; i++){
+                IniciarMatriz(&matriz);
+                vet.ListaIdMatriz[i] = matriz;
+                vet1.ListaIdMatriz[i] = matriz;
+                vet2.ListaIdMatriz[i] = matriz;
+                vet3.ListaIdMatriz[i] = matriz;
+                vet4.ListaIdMatriz[i] = matriz;
+                vet5.ListaIdMatriz[i] = matriz;
+              }
+
+            for(int i=0; i<730; i++){
+              fscanf(f, "%s", palavra);
+
+              if(strlen(palavra) == 1){
+                VetorIndice[i] = palavra[0] - '0';
+              } else if(strlen(palavra) == 2){
+                VetorIndice[i] = (palavra[0] - '0')*10 + (palavra[1] - '0');
+              } else if(strlen(palavra) == 3){
+                VetorIndice[i] = (palavra[0] - '0')*100 + (palavra[1] - '0')*10 + (palavra[2] - '0');
+              }  else if(strlen(palavra) == 4){
+                VetorIndice[i] = (palavra[0] - '0')*1000 + (palavra[1] - '0')*100 + (palavra[2] - '0')*10 + (palavra[3] - '0');
+              }
+            }
+
+            for(int i=0; i<730; i++){
+              for(int j=0; j<100; j++){
+                  IniciarVoo(&voo);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_dec(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_pouso(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_dec(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_pouso(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  if(strlen(palavra) == 1){
+                    pista = palavra[0] - '0';
+                  } else if(strlen(palavra) == 2){
+                    pista = (palavra[0] - '0')*10 + (palavra[1] - '0');
+                  }
+                  setId_pista(&voo, pista);
+
+                  Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
+
+              }
+            }
           } else if(n == 8){
+            TamanhoVetor = 3650;
+            AlocaVetor(&vet, TamanhoVetor);
+            AlocaVetor(&vet1, TamanhoVetor);
+            AlocaVetor(&vet2, TamanhoVetor);
+            AlocaVetor(&vet3, TamanhoVetor);
+            AlocaVetor(&vet4, TamanhoVetor);
+            AlocaVetor(&vet5, TamanhoVetor);
 
+            for(int i=0; i<TamanhoVetor; i++){
+                IniciarMatriz(&matriz);
+                vet.ListaIdMatriz[i] = matriz;
+                vet1.ListaIdMatriz[i] = matriz;
+                vet2.ListaIdMatriz[i] = matriz;
+                vet3.ListaIdMatriz[i] = matriz;
+                vet4.ListaIdMatriz[i] = matriz;
+                vet5.ListaIdMatriz[i] = matriz;
+              }
+
+            for(int i=0; i<TamanhoVetor; i++){
+              fscanf(f, "%s", palavra);
+
+              if(strlen(palavra) == 1){
+                VetorIndice[i] = palavra[0] - '0';
+              } else if(strlen(palavra) == 2){
+                VetorIndice[i] = (palavra[0] - '0')*10 + (palavra[1] - '0');
+              } else if(strlen(palavra) == 3){
+                VetorIndice[i] = (palavra[0] - '0')*100 + (palavra[1] - '0')*10 + (palavra[2] - '0');
+              } else if(strlen(palavra) == 4){
+                VetorIndice[i] = (palavra[0] - '0')*1000 + (palavra[1] - '0')*100 + (palavra[2] - '0')*10 + (palavra[3] - '0');
+              }
+            }
+
+            for(int i=0; i<TamanhoVetor; i++){
+              for(int j=0; j<100; j++){
+                  IniciarVoo(&voo);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_dec(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_pouso(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_dec(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_pouso(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  if(strlen(palavra) == 1){
+                    pista = palavra[0] - '0';
+                  } else if(strlen(palavra) == 2){
+                    pista = (palavra[0] - '0')*10 + (palavra[1] - '0');
+                  }
+                  setId_pista(&voo, pista);
+
+                  Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
+
+              }
+            }
           } else if(n == 9){
+            TamanhoVetor = 36500;
+            AlocaVetor(&vet, TamanhoVetor);
+            AlocaVetor(&vet1, TamanhoVetor);
+            AlocaVetor(&vet2, TamanhoVetor);
+            AlocaVetor(&vet3, TamanhoVetor);
+            AlocaVetor(&vet4, TamanhoVetor);
+            AlocaVetor(&vet5, TamanhoVetor);
 
+            for(int i=0; i<TamanhoVetor; i++){
+                IniciarMatriz(&matriz);
+                vet.ListaIdMatriz[i] = matriz;
+                vet1.ListaIdMatriz[i] = matriz;
+                vet2.ListaIdMatriz[i] = matriz;
+                vet3.ListaIdMatriz[i] = matriz;
+                vet4.ListaIdMatriz[i] = matriz;
+                vet5.ListaIdMatriz[i] = matriz;
+              }
+
+            for(int i=0; i<7300; i++){
+              fscanf(f, "%s", palavra);
+
+              if(strlen(palavra) == 1){
+                VetorIndice[i] = palavra[0] - '0';
+              } else if(strlen(palavra) == 2){
+                VetorIndice[i] = (palavra[0] - '0')*10 + (palavra[1] - '0');
+              } else if(strlen(palavra) == 3){
+                VetorIndice[i] = (palavra[0] - '0')*100 + (palavra[1] - '0')*10 + (palavra[2] - '0');
+              } else if(strlen(palavra) == 4){
+                VetorIndice[i] = (palavra[0] - '0')*1000 + (palavra[1] - '0')*100 + (palavra[2] - '0')*10 + (palavra[3] - '0');
+              } else if(strlen(palavra) == 5){
+                VetorIndice[i] = (palavra[0] - '0')*10000 + (palavra[1] - '0')*1000 + (palavra[2] - '0')*100 + (palavra[3] - '0')*10 + (palavra[4] - '0');
+              }
+            }
+
+            for(int i=0; i<7300; i++){
+              for(int j=0; j<10; j++){
+                  IniciarVoo(&voo);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_dec(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_pouso(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_dec(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_pouso(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  if(strlen(palavra) == 1){
+                    pista = palavra[0] - '0';
+                  } else if(strlen(palavra) == 2){
+                    pista = (palavra[0] - '0')*10 + (palavra[1] - '0');
+                  }
+                  setId_pista(&voo, pista);
+
+                  Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
+
+              }
+            }
           } else if(n == 10){
+            TamanhoVetor = 36500;
+            AlocaVetor(&vet, TamanhoVetor);
+            AlocaVetor(&vet1, TamanhoVetor);
+            AlocaVetor(&vet2, TamanhoVetor);
+            AlocaVetor(&vet3, TamanhoVetor);
+            AlocaVetor(&vet4, TamanhoVetor);
+            AlocaVetor(&vet5, TamanhoVetor);
 
+            for(int i=0; i<TamanhoVetor; i++){
+                IniciarMatriz(&matriz);
+                vet.ListaIdMatriz[i] = matriz;
+                vet1.ListaIdMatriz[i] = matriz;
+                vet2.ListaIdMatriz[i] = matriz;
+                vet3.ListaIdMatriz[i] = matriz;
+                vet4.ListaIdMatriz[i] = matriz;
+                vet5.ListaIdMatriz[i] = matriz;
+              }
+
+            for(int i=0; i<TamanhoVetor; i++){
+              fscanf(f, "%s", palavra);
+
+              if(strlen(palavra) == 1){
+                VetorIndice[i] = palavra[0] - '0';
+              } else if(strlen(palavra) == 2){
+                VetorIndice[i] = (palavra[0] - '0')*10 + (palavra[1] - '0');
+              } else if(strlen(palavra) == 3){
+                VetorIndice[i] = (palavra[0] - '0')*100 + (palavra[1] - '0')*10 + (palavra[2] - '0');
+              } else if(strlen(palavra) == 4){
+                VetorIndice[i] = (palavra[0] - '0')*1000 + (palavra[1] - '0')*100 + (palavra[2] - '0')*10 + (palavra[3] - '0');
+              } else if(strlen(palavra) == 5){
+                VetorIndice[i] = (palavra[0] - '0')*10000 + (palavra[1] - '0')*1000 + (palavra[2] - '0')*100 + (palavra[3] - '0')*10 + (palavra[4] - '0');
+              }
+            }
+
+            for(int i=0; i<TamanhoVetor; i++){
+              for(int j=0; j<10; j++){
+                  IniciarVoo(&voo);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_dec(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_pouso(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_dec(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_pouso(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  if(strlen(palavra) == 1){
+                    pista = palavra[0] - '0';
+                  } else if(strlen(palavra) == 2){
+                    pista = (palavra[0] - '0')*10 + (palavra[1] - '0');
+                  }
+                  setId_pista(&voo, pista);
+
+                  Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
+
+              }
+            }
           } else if(n == 11){
+            TamanhoVetor = 36500;
+            AlocaVetor(&vet, TamanhoVetor);
+            AlocaVetor(&vet1, TamanhoVetor);
+            AlocaVetor(&vet2, TamanhoVetor);
+            AlocaVetor(&vet3, TamanhoVetor);
+            AlocaVetor(&vet4, TamanhoVetor);
+            AlocaVetor(&vet5, TamanhoVetor);
 
+            for(int i=0; i<TamanhoVetor; i++){
+                IniciarMatriz(&matriz);
+                vet.ListaIdMatriz[i] = matriz;
+                vet1.ListaIdMatriz[i] = matriz;
+                vet2.ListaIdMatriz[i] = matriz;
+                vet3.ListaIdMatriz[i] = matriz;
+                vet4.ListaIdMatriz[i] = matriz;
+                vet5.ListaIdMatriz[i] = matriz;
+              }
+
+            for(int i=0; i<7300; i++){
+              fscanf(f, "%s", palavra);
+
+              if(strlen(palavra) == 1){
+                VetorIndice[i] = palavra[0] - '0';
+              } else if(strlen(palavra) == 2){
+                VetorIndice[i] = (palavra[0] - '0')*10 + (palavra[1] - '0');
+              } else if(strlen(palavra) == 3){
+                VetorIndice[i] = (palavra[0] - '0')*100 + (palavra[1] - '0')*10 + (palavra[2] - '0');
+              } else if(strlen(palavra) == 4){
+                VetorIndice[i] = (palavra[0] - '0')*1000 + (palavra[1] - '0')*100 + (palavra[2] - '0')*10 + (palavra[3] - '0');
+              } else if(strlen(palavra) == 5){
+                VetorIndice[i] = (palavra[0] - '0')*10000 + (palavra[1] - '0')*1000 + (palavra[2] - '0')*100 + (palavra[3] - '0')*10 + (palavra[4] - '0');
+              }
+            }
+
+            for(int i=0; i<7300; i++){
+              for(int j=0; j<100; j++){
+                  IniciarVoo(&voo);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_dec(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_pouso(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_dec(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_pouso(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  if(strlen(palavra) == 1){
+                    pista = palavra[0] - '0';
+                  } else if(strlen(palavra) == 2){
+                    pista = (palavra[0] - '0')*10 + (palavra[1] - '0');
+                  }
+                  setId_pista(&voo, pista);
+
+                  Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
+
+              }
+            }
           } else if(n == 12){
+            TamanhoVetor = 36500;
+            AlocaVetor(&vet, TamanhoVetor);
+            AlocaVetor(&vet1, TamanhoVetor);
+            AlocaVetor(&vet2, TamanhoVetor);
+            AlocaVetor(&vet3, TamanhoVetor);
+            AlocaVetor(&vet4, TamanhoVetor);
+            AlocaVetor(&vet5, TamanhoVetor);
 
+            for(int i=0; i<TamanhoVetor; i++){
+                IniciarMatriz(&matriz);
+                vet.ListaIdMatriz[i] = matriz;
+                vet1.ListaIdMatriz[i] = matriz;
+                vet2.ListaIdMatriz[i] = matriz;
+                vet3.ListaIdMatriz[i] = matriz;
+                vet4.ListaIdMatriz[i] = matriz;
+                vet5.ListaIdMatriz[i] = matriz;
+              }
+
+            for(int i=0; i<TamanhoVetor; i++){
+              fscanf(f, "%s", palavra);
+
+              if(strlen(palavra) == 1){
+                VetorIndice[i] = palavra[0] - '0';
+              } else if(strlen(palavra) == 2){
+                VetorIndice[i] = (palavra[0] - '0')*10 + (palavra[1] - '0');
+              } else if(strlen(palavra) == 3){
+                VetorIndice[i] = (palavra[0] - '0')*100 + (palavra[1] - '0')*10 + (palavra[2] - '0');
+              } else if(strlen(palavra) == 4){
+                VetorIndice[i] = (palavra[0] - '0')*1000 + (palavra[1] - '0')*100 + (palavra[2] - '0')*10 + (palavra[3] - '0');
+              } else if(strlen(palavra) == 5){
+                VetorIndice[i] = (palavra[0] - '0')*10000 + (palavra[1] - '0')*1000 + (palavra[2] - '0')*100 + (palavra[3] - '0')*10 + (palavra[4] - '0');
+              }
+            }
+
+            for(int i=0; i<TamanhoVetor; i++){
+              for(int j=0; j<100; j++){
+                  IniciarVoo(&voo);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_dec(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Hr, palavra);
+                  setHr_pouso(&voo, Hr);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_dec(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  strcpy(Aero, palavra);
+                  setAeroporto_pouso(&voo, Aero);
+
+                  fscanf(f, "%s", palavra);
+                  if(strlen(palavra) == 1){
+                    pista = palavra[0] - '0';
+                  } else if(strlen(palavra) == 2){
+                    pista = (palavra[0] - '0')*10 + (palavra[1] - '0');
+                  }
+                  setId_pista(&voo, pista);
+
+                  Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
+
+              }
+            }
           }
 
           fclose(f);
@@ -1197,8 +1882,8 @@ int main() {
             BubbleSort(&vet, TamanhoVetor, &compara, &movimenta);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em BubbleSort\n");
-            printf("Comparações: %d\n", compara);
-            printf("Movimentações: %d\n", movimenta);
+            printf("Comparações: %ld\n", compara);
+            printf("Movimentações: %ld\n", movimenta);
             printf("================================================\n");
 
           } else if(m == 2){
@@ -1207,8 +1892,8 @@ int main() {
             SelectSort(&vet1, TamanhoVetor, &compara, &movimenta);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em SelectSort\n");
-            printf("Comparações: %d\n", compara);
-            printf("Movimentações: %d\n", movimenta);
+            printf("Comparações: %ld\n", compara);
+            printf("Movimentações: %ld\n", movimenta);
             printf("================================================\n");
 
           } else if(m == 3){
@@ -1217,8 +1902,8 @@ int main() {
             InsertSort(&vet2, TamanhoVetor, &compara, &movimenta);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em InsertSort\n");
-            printf("Comparações: %d\n", compara);
-            printf("Movimentações: %d\n", movimenta);
+            printf("Comparações: %ld\n", compara);
+            printf("Movimentações: %ld\n", movimenta);
             printf("================================================\n");
 
           } else if(m == 4){
@@ -1227,8 +1912,8 @@ int main() {
             ShellSort(&vet3, TamanhoVetor, &compara, &movimenta);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em ShellSort\n");
-            printf("Comparações: %d\n", compara);
-            printf("Movimentações: %d\n", movimenta);
+            printf("Comparações: %ld\n", compara);
+            printf("Movimentações: %ld\n", movimenta);
             printf("================================================\n");
 
           } else if(m == 5){
@@ -1237,8 +1922,8 @@ int main() {
             QuickSort(&vet4, TamanhoVetor, &compara, &movimenta);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em QuickSort\n");
-            printf("Comparações: %d\n", compara);
-            printf("Movimentações: %d\n", movimenta);
+            printf("Comparações: %ld\n", compara);
+            printf("Movimentações: %ld\n", movimenta);
             printf("================================================\n");
 
           } else if(m == 6){
@@ -1247,8 +1932,8 @@ int main() {
             HeapSort(&vet5, TamanhoVetor, &compara, &movimenta);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em HeapSort\n");
-            printf("Comparações: %d\n", compara);
-            printf("Movimentações: %d\n", movimenta);
+            printf("Comparações: %ld\n", compara);
+            printf("Movimentações: %ld\n", movimenta);
             printf("================================================\n");
 
           } else if(m == 7){

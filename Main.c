@@ -932,8 +932,6 @@ int main() {
 
         }
 
-        Imprime_geral(vet.ListaIdMatriz[72]);
-
         while(1){
           printf("===================== Menu =====================\n");
           printf("              Como Deseja Ordenar\n");

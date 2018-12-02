@@ -1,10 +1,12 @@
 // Autores: Samuel Pedro - 3494, Estela Miranda - 3305, Yuri Dimitre - 3485.
 #include "Headers/TipoVetor.h"
+#include "Headers/ContadorTempo.h"
 
 int main() {
     /* Inicialização das TAD's */
     TipoVoo voo;
     TipoMatriz matriz;
+    Timer timer;
     TipoVetor vet, vet1, vet2, vet3, vet4, vet5;
     srand((unsigned)time(NULL));
 
@@ -953,11 +955,14 @@ int main() {
           } else if(m == 2){
             compara = 0;
             movimenta = 0;
+            TimerIniciar(&timer);
             SelectSort(&vet1, TamanhoVetor, &compara, &movimenta);
+            TimerParar(&timer);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em SelectSort\n");
             printf("Comparações: %ld\n", compara);
             printf("Movimentações: %ld\n", movimenta);
+            printf("Tempo de Execução: %lf\n", TimerTempoTotal(timer));
             printf("================================================\n");
 
           } else if(m == 3){

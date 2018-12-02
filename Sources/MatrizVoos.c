@@ -53,7 +53,7 @@ void Retirar(int id, TipoMatriz *matriz, TipoVoo *voo){
 }
 
 void Localizar(int id, TipoMatriz *matriz, TipoVoo *voo){
-    int i,j, loc=0;
+    int i,j;
 
     for(i=0; i<24; i++){
         for(j=0; j<24; j++){

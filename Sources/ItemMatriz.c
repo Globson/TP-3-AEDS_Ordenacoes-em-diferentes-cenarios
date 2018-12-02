@@ -20,8 +20,8 @@ void setVoos(TipoItemMatriz* item, int voo){
 }
 
 /* Operação de Acesso do Item 'Ultima Hora' */
-char* getUlt_Hora(TipoItemMatriz x){
-    return x.ult_hora;
+char* getUlt_Hora(TipoItemMatriz* x){
+    return x->ult_hora;
 }
 
 /* Operação de Alteração do Item 'Ultima Hora' */

@@ -14,5 +14,5 @@ void IniciarItem(TipoItemMatriz *item);
 /* Funcções de Alteração e Acesso aos dados do Item Matriz */
 int getVoos(TipoItemMatriz x);
 void setVoos(TipoItemMatriz* item, int voo);
-char* getUlt_Hora(TipoItemMatriz x);
+char* getUlt_Hora(TipoItemMatriz* x);
 void setUlt_Hora(TipoItemMatriz* item, char *hora);

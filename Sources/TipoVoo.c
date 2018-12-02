@@ -50,8 +50,8 @@ void setId(TipoVoo* x, int novoid){
 }
 
 /* Operação de Acesso do Item 'Horario de Decolagem' */
-char* getHr_dec (TipoVoo x){
-    return x.Hr_dec;
+char* getHr_dec (TipoVoo* x){
+    return x->Hr_dec;
 }
 
 /* Operação de Alteração do Item 'Horario de Decolagem' */
@@ -60,8 +60,8 @@ void setHr_dec(TipoVoo* x, char *Hr){
 }
 
 /* Operação de Acesso do Item 'Horario de Pouso' */
-char* getHr_pouso(TipoVoo x){
-    return x.Hr_pouso;
+char* getHr_pouso(TipoVoo* x){
+    return x->Hr_pouso;
 }
 
 /* Operação de Alteração do Item 'Horario de Pouso' */
@@ -70,8 +70,8 @@ void setHr_pouso(TipoVoo* x, char *Hr){
 }
 
 /* Operação de Acesso do Item 'Aeroporto de Decolagem' */
-char* getAreroporto_dec(TipoVoo x){
-    return x.aeroporto_dec;
+char* getAreroporto_dec(TipoVoo* x){
+    return x->aeroporto_dec;
 }
 
 /* Operação de Alteração do Item 'Aeroporto de Decolagem' */
@@ -80,8 +80,8 @@ void setAeroporto_dec(TipoVoo* x, char *Aero){
 }
 
 /* Operação de Acesso do Item 'Aeroporto de Pouso' */
-char* getAeroporto_pouso(TipoVoo x){
-    return x.aeroporto_pouso;
+char* getAeroporto_pouso(TipoVoo* x){
+    return x->aeroporto_pouso;
 }
 
 /* Operação de Alteração do Item 'Aeroporto de Pouso' */

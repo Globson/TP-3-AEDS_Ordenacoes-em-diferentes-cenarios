@@ -20,13 +20,13 @@ void LetraAleatoria(int n, char *l);
 /* Funções de Alteração e Acesso aos dados do Voo */
 int getId(TipoVoo x);
 void setId(TipoVoo* x, int novoid);
-char* getHr_dec(TipoVoo x);
+char* getHr_dec(TipoVoo* x);
 void setHr_dec(TipoVoo* x, char *Hr);
-char* getHr_pouso(TipoVoo x);
+char* getHr_pouso(TipoVoo* x);
 void setHr_pouso(TipoVoo* x, char *Hr);
-char* getAreroporto_dec(TipoVoo x);
+char* getAreroporto_dec(TipoVoo* x);
 void setAeroporto_dec(TipoVoo* x, char *Aero);
-char* getAeroporto_pouso(TipoVoo x);
+char* getAeroporto_pouso(TipoVoo* x);
 void setAeroporto_pouso(TipoVoo* x, char *Aero);
 int getId_pista(TipoVoo x);
 void setId_pista(TipoVoo* x, char novoid);

@@ -7,6 +7,6 @@ typedef struct {
     double tempoTotal;
 } Timer;
 
-void TimerIniciar(Timer *timer);
-void TimerParar(Timer *timer);
-double TimerTempoTotal(Timer timer);
+void IniciarTimer(Timer *timer);
+void PararTimer(Timer *timer);
+double TempoTotal(Timer timer);

@@ -945,64 +945,79 @@ int main() {
           if(m == 1){
             compara = 0;
             movimenta = 0;
+            IniciarTimer(&timer);
             BubbleSort(&vet, TamanhoVetor, &compara, &movimenta);
+            PararTimer(&timer);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em BubbleSort\n");
             printf("Comparações: %ld\n", compara);
             printf("Movimentações: %ld\n", movimenta);
+            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
             printf("================================================\n");
 
           } else if(m == 2){
             compara = 0;
             movimenta = 0;
-            TimerIniciar(&timer);
+            IniciarTimer(&timer);
             SelectSort(&vet1, TamanhoVetor, &compara, &movimenta);
-            TimerParar(&timer);
+            PararTimer(&timer);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em SelectSort\n");
             printf("Comparações: %ld\n", compara);
             printf("Movimentações: %ld\n", movimenta);
-            printf("Tempo de Execução: %lf\n", TimerTempoTotal(timer));
+            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
             printf("================================================\n");
 
           } else if(m == 3){
             compara = 0;
             movimenta = 0;
+            IniciarTimer(&timer);
             InsertSort(&vet2, TamanhoVetor, &compara, &movimenta);
+            PararTimer(&timer);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em InsertSort\n");
             printf("Comparações: %ld\n", compara);
             printf("Movimentações: %ld\n", movimenta);
+            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
             printf("================================================\n");
 
           } else if(m == 4){
             compara = 0;
             movimenta = 0;
+            IniciarTimer(&timer);
             ShellSort(&vet3, TamanhoVetor, &compara, &movimenta);
+            PararTimer(&timer);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em ShellSort\n");
             printf("Comparações: %ld\n", compara);
             printf("Movimentações: %ld\n", movimenta);
+            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
             printf("================================================\n");
 
           } else if(m == 5){
             compara = 0;
             movimenta = 0;
+            IniciarTimer(&timer);
             QuickSort(&vet4, TamanhoVetor, &compara, &movimenta);
+            PararTimer(&timer);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em QuickSort\n");
             printf("Comparações: %ld\n", compara);
             printf("Movimentações: %ld\n", movimenta);
+            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
             printf("================================================\n");
 
           } else if(m == 6){
             compara = 0;
             movimenta = 0;
+            IniciarTimer(&timer);
             HeapSort(&vet5, TamanhoVetor, &compara, &movimenta);
+            PararTimer(&timer);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em HeapSort\n");
             printf("Comparações: %ld\n", compara);
             printf("Movimentações: %ld\n", movimenta);
+            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
             printf("================================================\n");
 
           } else if(m == 7){
@@ -1884,61 +1899,79 @@ int main() {
           if(m == 1){
             compara = 0;
             movimenta = 0;
+            IniciarTimer(&timer);
             BubbleSort(&vet, TamanhoVetor, &compara, &movimenta);
+            PararTimer(&timer);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em BubbleSort\n");
             printf("Comparações: %ld\n", compara);
             printf("Movimentações: %ld\n", movimenta);
+            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
             printf("================================================\n");
 
           } else if(m == 2){
             compara = 0;
             movimenta = 0;
+            IniciarTimer(&timer);
             SelectSort(&vet1, TamanhoVetor, &compara, &movimenta);
+            PararTimer(&timer);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em SelectSort\n");
             printf("Comparações: %ld\n", compara);
             printf("Movimentações: %ld\n", movimenta);
+            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
             printf("================================================\n");
 
           } else if(m == 3){
             compara = 0;
             movimenta = 0;
+            IniciarTimer(&timer);
             InsertSort(&vet2, TamanhoVetor, &compara, &movimenta);
+            PararTimer(&timer);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em InsertSort\n");
             printf("Comparações: %ld\n", compara);
             printf("Movimentações: %ld\n", movimenta);
+            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
             printf("================================================\n");
 
           } else if(m == 4){
             compara = 0;
             movimenta = 0;
+            IniciarTimer(&timer);
             ShellSort(&vet3, TamanhoVetor, &compara, &movimenta);
+            PararTimer(&timer);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em ShellSort\n");
             printf("Comparações: %ld\n", compara);
             printf("Movimentações: %ld\n", movimenta);
+            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
             printf("================================================\n");
 
           } else if(m == 5){
             compara = 0;
             movimenta = 0;
+            IniciarTimer(&timer);
             QuickSort(&vet4, TamanhoVetor, &compara, &movimenta);
+            PararTimer(&timer);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em QuickSort\n");
             printf("Comparações: %ld\n", compara);
             printf("Movimentações: %ld\n", movimenta);
+            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
             printf("================================================\n");
 
           } else if(m == 6){
             compara = 0;
             movimenta = 0;
+            IniciarTimer(&timer);
             HeapSort(&vet5, TamanhoVetor, &compara, &movimenta);
+            PararTimer(&timer);
             printf("===================== Menu =====================\n");
             printf("              Ordenado em HeapSort\n");
             printf("Comparações: %ld\n", compara);
             printf("Movimentações: %ld\n", movimenta);
+            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
             printf("================================================\n");
 
           } else if(m == 7){

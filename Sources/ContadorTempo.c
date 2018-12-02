@@ -1,14 +1,14 @@
 #include "../Headers/ContadorTempo.h"
 
-void TimerIniciar(Timer *timer){
+void IniciarTimer(Timer *timer){
     timer->tempoInicial = clock();
 }
 
-void TimerParar(Timer *timer){
+void PararTimer(Timer *timer){
     timer->tempoFinal = clock();
     timer->tempoTotal = (double)(timer->tempoFinal - timer->tempoInicial)/CLOCKS_PER_SEC;
 }
 
-double TimerTempoTotal(Timer timer){
+double TempoTotal(Timer timer){
     return timer.tempoTotal;
 }

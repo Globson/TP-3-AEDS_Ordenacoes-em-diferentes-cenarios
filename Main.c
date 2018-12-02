@@ -1884,7 +1884,7 @@ int main() {
           }
 
           fclose(f);
-        }
+
 
         while(1){
           printf("===================== Menu =====================\n");
@@ -1978,7 +1978,7 @@ int main() {
             break;
           }
         }
-
+       }
       } else if(n == 3){
         int f = 0;
       printf("\nDeseja realmente finalizar a execucao do programa?\n\t1.Sim\n\t2.Nao\n");

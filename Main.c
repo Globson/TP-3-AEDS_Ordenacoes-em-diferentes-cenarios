@@ -77,17 +77,17 @@ int main() {
                  Hr[0] = auxHr; Hr[1] = auxHr1; Hr[2] = auxHr2; Hr[3] = auxHr3; Hr[4] = auxHr4; Hr[5] = '\0';
                  setHr_pouso(&voo, Hr);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero, auxAero);
                  setAeroporto_dec(&voo, Aero);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero1, auxAero);
@@ -152,17 +152,17 @@ int main() {
                  Hr[0] = auxHr; Hr[1] = auxHr1; Hr[2] = auxHr2; Hr[3] = auxHr3; Hr[4] = auxHr4; Hr[5] = '\0';
                  setHr_pouso(&voo, Hr);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero, auxAero);
                  setAeroporto_dec(&voo, Aero);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero1, auxAero);
@@ -227,17 +227,17 @@ int main() {
                  Hr[0] = auxHr; Hr[1] = auxHr1; Hr[2] = auxHr2; Hr[3] = auxHr3; Hr[4] = auxHr4; Hr[5] = '\0';
                  setHr_pouso(&voo, Hr);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero, auxAero);
                  setAeroporto_dec(&voo, Aero);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero1, auxAero);
@@ -302,17 +302,17 @@ int main() {
                  Hr[0] = auxHr; Hr[1] = auxHr1; Hr[2] = auxHr2; Hr[3] = auxHr3; Hr[4] = auxHr4; Hr[5] = '\0';
                  setHr_pouso(&voo, Hr);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero, auxAero);
                  setAeroporto_dec(&voo, Aero);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero1, auxAero);
@@ -377,17 +377,17 @@ int main() {
                  Hr[0] = auxHr; Hr[1] = auxHr1; Hr[2] = auxHr2; Hr[3] = auxHr3; Hr[4] = auxHr4; Hr[5] = '\0';
                  setHr_pouso(&voo, Hr);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero, auxAero);
                  setAeroporto_dec(&voo, Aero);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero1, auxAero);
@@ -452,17 +452,17 @@ int main() {
                  Hr[0] = auxHr; Hr[1] = auxHr1; Hr[2] = auxHr2; Hr[3] = auxHr3; Hr[4] = auxHr4; Hr[5] = '\0';
                  setHr_pouso(&voo, Hr);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero, auxAero);
                  setAeroporto_dec(&voo, Aero);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero1, auxAero);
@@ -527,17 +527,17 @@ int main() {
                  Hr[0] = auxHr; Hr[1] = auxHr1; Hr[2] = auxHr2; Hr[3] = auxHr3; Hr[4] = auxHr4; Hr[5] = '\0';
                  setHr_pouso(&voo, Hr);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero, auxAero);
                  setAeroporto_dec(&voo, Aero);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero1, auxAero);
@@ -602,17 +602,17 @@ int main() {
                  Hr[0] = auxHr; Hr[1] = auxHr1; Hr[2] = auxHr2; Hr[3] = auxHr3; Hr[4] = auxHr4; Hr[5] = '\0';
                  setHr_pouso(&voo, Hr);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero, auxAero);
                  setAeroporto_dec(&voo, Aero);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero1, auxAero);
@@ -677,17 +677,17 @@ int main() {
                  Hr[0] = auxHr; Hr[1] = auxHr1; Hr[2] = auxHr2; Hr[3] = auxHr3; Hr[4] = auxHr4; Hr[5] = '\0';
                  setHr_pouso(&voo, Hr);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero, auxAero);
                  setAeroporto_dec(&voo, Aero);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero1, auxAero);
@@ -752,17 +752,17 @@ int main() {
                  Hr[0] = auxHr; Hr[1] = auxHr1; Hr[2] = auxHr2; Hr[3] = auxHr3; Hr[4] = auxHr4; Hr[5] = '\0';
                  setHr_pouso(&voo, Hr);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero, auxAero);
                  setAeroporto_dec(&voo, Aero);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero1, auxAero);
@@ -827,17 +827,17 @@ int main() {
                  Hr[0] = auxHr; Hr[1] = auxHr1; Hr[2] = auxHr2; Hr[3] = auxHr3; Hr[4] = auxHr4; Hr[5] = '\0';
                  setHr_pouso(&voo, Hr);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero, auxAero);
                  setAeroporto_dec(&voo, Aero);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero1, auxAero);
@@ -902,17 +902,17 @@ int main() {
                  Hr[0] = auxHr; Hr[1] = auxHr1; Hr[2] = auxHr2; Hr[3] = auxHr3; Hr[4] = auxHr4; Hr[5] = '\0';
                  setHr_pouso(&voo, Hr);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero, auxAero);
                  setAeroporto_dec(&voo, Aero);
 
-                 LetraAleatoria((rand()%1053), &auxAero);
-                 LetraAleatoria((rand()%1053), &auxAero1);
-                 LetraAleatoria((rand()%1053), &auxAero2);
+                 LetraAleatoria((rand()%1053), auxAero);
+                 LetraAleatoria((rand()%1053), auxAero1);
+                 LetraAleatoria((rand()%1053), auxAero2);
                  strcat(auxAero, auxAero1);
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero1, auxAero);
@@ -931,6 +931,8 @@ int main() {
             }
 
         }
+
+        Imprime_geral(vet.ListaIdMatriz[72]);
 
         while(1){
           printf("===================== Menu =====================\n");

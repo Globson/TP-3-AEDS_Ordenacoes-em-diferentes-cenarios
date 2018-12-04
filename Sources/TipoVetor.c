@@ -4,6 +4,10 @@ void AlocaVetor(TipoVetor* vetor, unsigned int TamanhoVetor){
   vetor->ListaIdMatriz = (TipoMatriz*) malloc (TamanhoVetor*sizeof(TipoMatriz));
 }
 
+void DesalocaVetor(TipoVetor* vetor){
+  free(vetor->ListaIdMatriz);
+}
+
 void BubbleSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int *Movimenta){
   int i,j;
   TipoMatriz aux;

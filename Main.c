@@ -1021,6 +1021,12 @@ int main() {
             printf("================================================\n");
 
           } else if(m == 7){
+            DesalocaVetor(&vet);   //Desalocando Vetores utilizados//
+            DesalocaVetor(&vet1);
+            DesalocaVetor(&vet2);
+            DesalocaVetor(&vet3);
+            DesalocaVetor(&vet4);
+            DesalocaVetor(&vet5);
             break;
           }
         }
@@ -1972,6 +1978,12 @@ int main() {
             printf("================================================\n");
 
           } else if(m == 7){
+            DesalocaVetor(&vet);   //Desalocando Vetores utilizados//
+            DesalocaVetor(&vet1);
+            DesalocaVetor(&vet2);
+            DesalocaVetor(&vet3);
+            DesalocaVetor(&vet4);
+            DesalocaVetor(&vet5);
             break;
           }
         }

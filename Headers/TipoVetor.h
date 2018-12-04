@@ -6,6 +6,8 @@ typedef struct{
 
 void AlocaVetor(TipoVetor* vetor, unsigned int TamanhoVetor);
 
+void DesalocaVetor(TipoVetor* vetor);
+
 //Chamada dos algoritmos de ordenação
 void BubbleSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int *Movimenta);
 void SelectSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int *Movimenta);

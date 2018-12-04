@@ -1025,11 +1025,10 @@ int main() {
           }
         }
 
-      } else if(n == 2){  //Samuelzim começou a parada de arquivo// n to sabendo como ler aquela parada X0 // #YURICABAÇO
+      } else if(n == 2){
         FILE *f;
         char nome_arquivo[20], palavra[10];
         int VetorIndice[73], n;
-
         printf("===================== Menu =====================\n");
         printf("              Escolha um Cenario\n");
         printf("================================================\n");
@@ -1043,8 +1042,6 @@ int main() {
         printf("\n\tErro!Nao foi possivel abrir arquivo!\n");}
         else{
           printf("\n\tArquivo aberto com sucesso!\n");
-          //TODO LEITURA DO ARQUIVO E CHAMADA DE OPERAÇÕES//
-
           if(n == 1){
             TamanhoVetor = 365;
             AlocaVetor(&vet, TamanhoVetor);

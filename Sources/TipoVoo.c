@@ -8,7 +8,7 @@ void IniciarVoo(TipoVoo *Voo){
     strcpy(Voo->aeroporto_pouso, "\0");
     Voo->Id_Pista = 0;
 }
-void LetraAleatoria(int n, char *l){ // entrar com numero de 0 ate 1053.// bjus do samuca
+void LetraAleatoria(int n, char *l){ // Entrar com numero aleatorio de 0 ate 1053.//
   if((0<=n) && (n<=39)) strcpy(l,"A");
   else if((39<n) && (n<=78)) strcpy(l,"B");
   else if((78<n) && (n<=117)) strcpy(l,"C");

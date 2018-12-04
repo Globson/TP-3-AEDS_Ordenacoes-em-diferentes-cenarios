@@ -49,12 +49,10 @@ void RetiraVoo(int id, TipoLista* Lista, TipoVoo* Voo){
 /* Implementação semelhante à 'RetiraVoo', porém apenas retornando o valor à utilização,
    sem remoção da Lista */
 int ProcuraVoo(int id, TipoLista *Lista, TipoVoo *Voo){
-    TipoCelula *Aux, *Aux1;
-    Aux = Lista->Primeiro;
+    TipoCelula *Aux1;
     Aux1 = Lista->Primeiro->Prox;
 
     while (Aux1 != NULL && Aux1->Voo.Id != id){
-        Aux = Aux1;
         Aux1 = Aux1->Prox;
     }
 

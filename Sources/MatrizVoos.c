@@ -1,6 +1,3 @@
-//
-// Autores: Elida Emilly - 3012, Estela Miranda - 3305, Yuri de Faria - 3373
-//
 #include "../Headers/MatrizVoos.h"
 
 /* Função que Inicia a Matriz com base na Função de Inicialização dos dados do Item da Matriz */

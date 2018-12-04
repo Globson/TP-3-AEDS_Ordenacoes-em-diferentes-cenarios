@@ -1,6 +1,3 @@
-//
-// Autores: Elida Emilly - 3012, Estela Miranda - 3305, Yuri de Faria - 3373
-//
 #include "../Headers/TipoVoo.h"
 
 void IniciarVoo(TipoVoo *Voo){

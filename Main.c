@@ -797,7 +797,7 @@ int main() {
 
         while(1){
               printf("===================== Menu =====================\n");
-              printf("              Como Deseja Ordenar\n");
+              printf("              Como Deseja Ordenar?\n");
               printf(" 1 - BubbleSort   2 - SelectSort  3 - InsertSort\n");
               printf(" 4 - ShellSort    5 - QuickSort   6 - HeapSort\n");
               printf(" 7 - Sair\n");
@@ -1186,7 +1186,7 @@ int main() {
               }
             }
 
-            for(int i=0; i<73; i++){
+            for(int i=0; i<730; i++){
               for(int j=0; j<10; j++){
                   IniciarVoo(&voo);
 
@@ -1647,7 +1647,7 @@ int main() {
 
           while(1){
                 printf("===================== Menu =====================\n");
-                printf("              Como Deseja Ordenar\n");
+                printf("              Como Deseja Ordenar?\n");
                 printf(" 1 - BubbleSort   2 - SelectSort  3 - InsertSort\n");
                 printf(" 4 - ShellSort    5 - QuickSort   6 - HeapSort\n");
                 printf(" 7 - Sair\n");

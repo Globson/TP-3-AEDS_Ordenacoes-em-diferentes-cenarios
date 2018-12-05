@@ -49,7 +49,7 @@ int main() {
               vet5.ListaIdMatriz[i] = matriz;
             }
 
-            for(int i=0; i<75; i++){
+            for(int i=0; i<73; i++){
               for(int j=0; j<10; j++){
                  IniciarVoo(&voo);
 
@@ -199,7 +199,7 @@ int main() {
               vet5.ListaIdMatriz[i] = matriz;
             }
 
-            for(int i=0; i<75; i++){
+            for(int i=0; i<73; i++){
               for(int j=0; j<10; j++){
                  IniciarVoo(&voo);
 

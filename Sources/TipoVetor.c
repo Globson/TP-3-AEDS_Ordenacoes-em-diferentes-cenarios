@@ -56,10 +56,10 @@ void InsertSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int
 
     while((j>=0) && (aux.idMatriz < Vetor->ListaIdMatriz[j].idMatriz)){
       Vetor->ListaIdMatriz[j+1] = Vetor->ListaIdMatriz[j];
-      j--;}
-      Vetor->ListaIdMatriz[j+1] = aux;
+      j--;
       *Movimenta = *Movimenta+1;
-      *Compara = *Compara+1;
+      *Compara = *Compara+1;}
+      Vetor->ListaIdMatriz[j+1] = aux;
   }
 }
 

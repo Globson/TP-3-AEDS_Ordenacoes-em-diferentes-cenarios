@@ -7,7 +7,7 @@ int main() {
     TipoVoo voo;
     TipoMatriz matriz;
     Timer timer;
-    TipoVetor vet, vet1, vet2, vet3, vet4, vet5;
+    TipoVetor vet, vet1;
     srand((unsigned)time(NULL));
 
     /* Declaração de variavéis auxiliares */
@@ -34,19 +34,11 @@ int main() {
           TamanhoVetor = 365;
           AlocaVetor(&vet, TamanhoVetor);
           AlocaVetor(&vet1, TamanhoVetor);
-          AlocaVetor(&vet2, TamanhoVetor);
-          AlocaVetor(&vet3, TamanhoVetor);
-          AlocaVetor(&vet4, TamanhoVetor);
-          AlocaVetor(&vet5, TamanhoVetor);
 
           for(int i=0; i<TamanhoVetor; i++){
               IniciarMatriz(&matriz);
               vet.ListaIdMatriz[i] = matriz;
               vet1.ListaIdMatriz[i] = matriz;
-              vet2.ListaIdMatriz[i] = matriz;
-              vet3.ListaIdMatriz[i] = matriz;
-              vet4.ListaIdMatriz[i] = matriz;
-              vet5.ListaIdMatriz[i] = matriz;
             }
 
             for(int i=0; i<73; i++){
@@ -98,10 +90,6 @@ int main() {
 
                  Inserir(voo, &vet.ListaIdMatriz[i]);
                  Inserir(voo, &vet1.ListaIdMatriz[i]);
-                 Inserir(voo, &vet2.ListaIdMatriz[i]);
-                 Inserir(voo, &vet3.ListaIdMatriz[i]);
-                 Inserir(voo, &vet4.ListaIdMatriz[i]);
-                 Inserir(voo, &vet5.ListaIdMatriz[i]);
               }
             }
 
@@ -109,19 +97,11 @@ int main() {
           TamanhoVetor = 365;
           AlocaVetor(&vet, TamanhoVetor);
           AlocaVetor(&vet1, TamanhoVetor);
-          AlocaVetor(&vet2, TamanhoVetor);
-          AlocaVetor(&vet3, TamanhoVetor);
-          AlocaVetor(&vet4, TamanhoVetor);
-          AlocaVetor(&vet5, TamanhoVetor);
 
           for(int i=0; i<TamanhoVetor; i++){
               IniciarMatriz(&matriz);
               vet.ListaIdMatriz[i] = matriz;
               vet1.ListaIdMatriz[i] = matriz;
-              vet2.ListaIdMatriz[i] = matriz;
-              vet3.ListaIdMatriz[i] = matriz;
-              vet4.ListaIdMatriz[i] = matriz;
-              vet5.ListaIdMatriz[i] = matriz;
             }
 
             for(int i=0; i<TamanhoVetor; i++){
@@ -173,10 +153,6 @@ int main() {
 
                  Inserir(voo, &vet.ListaIdMatriz[i]);
                  Inserir(voo, &vet1.ListaIdMatriz[i]);
-                 Inserir(voo, &vet2.ListaIdMatriz[i]);
-                 Inserir(voo, &vet3.ListaIdMatriz[i]);
-                 Inserir(voo, &vet4.ListaIdMatriz[i]);
-                 Inserir(voo, &vet5.ListaIdMatriz[i]);
               }
             }
 
@@ -184,19 +160,11 @@ int main() {
           TamanhoVetor = 365;
           AlocaVetor(&vet, TamanhoVetor);
           AlocaVetor(&vet1, TamanhoVetor);
-          AlocaVetor(&vet2, TamanhoVetor);
-          AlocaVetor(&vet3, TamanhoVetor);
-          AlocaVetor(&vet4, TamanhoVetor);
-          AlocaVetor(&vet5, TamanhoVetor);
 
           for(int i=0; i<TamanhoVetor; i++){
               IniciarMatriz(&matriz);
               vet.ListaIdMatriz[i] = matriz;
               vet1.ListaIdMatriz[i] = matriz;
-              vet2.ListaIdMatriz[i] = matriz;
-              vet3.ListaIdMatriz[i] = matriz;
-              vet4.ListaIdMatriz[i] = matriz;
-              vet5.ListaIdMatriz[i] = matriz;
             }
 
             for(int i=0; i<73; i++){
@@ -248,10 +216,6 @@ int main() {
 
                  Inserir(voo, &vet.ListaIdMatriz[i]);
                  Inserir(voo, &vet1.ListaIdMatriz[i]);
-                 Inserir(voo, &vet2.ListaIdMatriz[i]);
-                 Inserir(voo, &vet3.ListaIdMatriz[i]);
-                 Inserir(voo, &vet4.ListaIdMatriz[i]);
-                 Inserir(voo, &vet5.ListaIdMatriz[i]);
               }
             }
 
@@ -259,19 +223,11 @@ int main() {
           TamanhoVetor = 365;
           AlocaVetor(&vet, TamanhoVetor);
           AlocaVetor(&vet1, TamanhoVetor);
-          AlocaVetor(&vet2, TamanhoVetor);
-          AlocaVetor(&vet3, TamanhoVetor);
-          AlocaVetor(&vet4, TamanhoVetor);
-          AlocaVetor(&vet5, TamanhoVetor);
 
           for(int i=0; i<TamanhoVetor; i++){
               IniciarMatriz(&matriz);
               vet.ListaIdMatriz[i] = matriz;
               vet1.ListaIdMatriz[i] = matriz;
-              vet2.ListaIdMatriz[i] = matriz;
-              vet3.ListaIdMatriz[i] = matriz;
-              vet4.ListaIdMatriz[i] = matriz;
-              vet5.ListaIdMatriz[i] = matriz;
             }
 
             for(int i=0; i<TamanhoVetor; i++){
@@ -323,10 +279,6 @@ int main() {
 
                  Inserir(voo, &vet.ListaIdMatriz[i]);
                  Inserir(voo, &vet1.ListaIdMatriz[i]);
-                 Inserir(voo, &vet2.ListaIdMatriz[i]);
-                 Inserir(voo, &vet3.ListaIdMatriz[i]);
-                 Inserir(voo, &vet4.ListaIdMatriz[i]);
-                 Inserir(voo, &vet5.ListaIdMatriz[i]);
               }
             }
 
@@ -334,19 +286,11 @@ int main() {
           TamanhoVetor = 3650;
           AlocaVetor(&vet, TamanhoVetor);
           AlocaVetor(&vet1, TamanhoVetor);
-          AlocaVetor(&vet2, TamanhoVetor);
-          AlocaVetor(&vet3, TamanhoVetor);
-          AlocaVetor(&vet4, TamanhoVetor);
-          AlocaVetor(&vet5, TamanhoVetor);
 
           for(int i=0; i<TamanhoVetor; i++){
               IniciarMatriz(&matriz);
               vet.ListaIdMatriz[i] = matriz;
               vet1.ListaIdMatriz[i] = matriz;
-              vet2.ListaIdMatriz[i] = matriz;
-              vet3.ListaIdMatriz[i] = matriz;
-              vet4.ListaIdMatriz[i] = matriz;
-              vet5.ListaIdMatriz[i] = matriz;
             }
 
             for(int i=0; i<730; i++){
@@ -398,10 +342,6 @@ int main() {
 
                  Inserir(voo, &vet.ListaIdMatriz[i]);
                  Inserir(voo, &vet1.ListaIdMatriz[i]);
-                 Inserir(voo, &vet2.ListaIdMatriz[i]);
-                 Inserir(voo, &vet3.ListaIdMatriz[i]);
-                 Inserir(voo, &vet4.ListaIdMatriz[i]);
-                 Inserir(voo, &vet5.ListaIdMatriz[i]);
               }
             }
 
@@ -409,19 +349,11 @@ int main() {
           TamanhoVetor = 3650;
           AlocaVetor(&vet, TamanhoVetor);
           AlocaVetor(&vet1, TamanhoVetor);
-          AlocaVetor(&vet2, TamanhoVetor);
-          AlocaVetor(&vet3, TamanhoVetor);
-          AlocaVetor(&vet4, TamanhoVetor);
-          AlocaVetor(&vet5, TamanhoVetor);
 
           for(int i=0; i<TamanhoVetor; i++){
               IniciarMatriz(&matriz);
               vet.ListaIdMatriz[i] = matriz;
               vet1.ListaIdMatriz[i] = matriz;
-              vet2.ListaIdMatriz[i] = matriz;
-              vet3.ListaIdMatriz[i] = matriz;
-              vet4.ListaIdMatriz[i] = matriz;
-              vet5.ListaIdMatriz[i] = matriz;
             }
 
             for(int i=0; i<TamanhoVetor; i++){
@@ -473,10 +405,6 @@ int main() {
 
                  Inserir(voo, &vet.ListaIdMatriz[i]);
                  Inserir(voo, &vet1.ListaIdMatriz[i]);
-                 Inserir(voo, &vet2.ListaIdMatriz[i]);
-                 Inserir(voo, &vet3.ListaIdMatriz[i]);
-                 Inserir(voo, &vet4.ListaIdMatriz[i]);
-                 Inserir(voo, &vet5.ListaIdMatriz[i]);
               }
             }
 
@@ -484,19 +412,11 @@ int main() {
           TamanhoVetor = 3650;
           AlocaVetor(&vet, TamanhoVetor);
           AlocaVetor(&vet1, TamanhoVetor);
-          AlocaVetor(&vet2, TamanhoVetor);
-          AlocaVetor(&vet3, TamanhoVetor);
-          AlocaVetor(&vet4, TamanhoVetor);
-          AlocaVetor(&vet5, TamanhoVetor);
 
           for(int i=0; i<TamanhoVetor; i++){
               IniciarMatriz(&matriz);
               vet.ListaIdMatriz[i] = matriz;
               vet1.ListaIdMatriz[i] = matriz;
-              vet2.ListaIdMatriz[i] = matriz;
-              vet3.ListaIdMatriz[i] = matriz;
-              vet4.ListaIdMatriz[i] = matriz;
-              vet5.ListaIdMatriz[i] = matriz;
             }
 
             for(int i=0; i<730; i++){
@@ -548,10 +468,6 @@ int main() {
 
                  Inserir(voo, &vet.ListaIdMatriz[i]);
                  Inserir(voo, &vet1.ListaIdMatriz[i]);
-                 Inserir(voo, &vet2.ListaIdMatriz[i]);
-                 Inserir(voo, &vet3.ListaIdMatriz[i]);
-                 Inserir(voo, &vet4.ListaIdMatriz[i]);
-                 Inserir(voo, &vet5.ListaIdMatriz[i]);
               }
             }
 
@@ -559,19 +475,12 @@ int main() {
           TamanhoVetor = 3650;
           AlocaVetor(&vet, TamanhoVetor);
           AlocaVetor(&vet1, TamanhoVetor);
-          AlocaVetor(&vet2, TamanhoVetor);
-          AlocaVetor(&vet3, TamanhoVetor);
-          AlocaVetor(&vet4, TamanhoVetor);
-          AlocaVetor(&vet5, TamanhoVetor);
 
           for(int i=0; i<TamanhoVetor; i++){
               IniciarMatriz(&matriz);
               vet.ListaIdMatriz[i] = matriz;
               vet1.ListaIdMatriz[i] = matriz;
-              vet2.ListaIdMatriz[i] = matriz;
-              vet3.ListaIdMatriz[i] = matriz;
-              vet4.ListaIdMatriz[i] = matriz;
-              vet5.ListaIdMatriz[i] = matriz;
+
             }
 
             for(int i=0; i<TamanhoVetor; i++){
@@ -623,10 +532,7 @@ int main() {
 
                  Inserir(voo, &vet.ListaIdMatriz[i]);
                  Inserir(voo, &vet1.ListaIdMatriz[i]);
-                 Inserir(voo, &vet2.ListaIdMatriz[i]);
-                 Inserir(voo, &vet3.ListaIdMatriz[i]);
-                 Inserir(voo, &vet4.ListaIdMatriz[i]);
-                 Inserir(voo, &vet5.ListaIdMatriz[i]);
+
               }
             }
 
@@ -634,19 +540,12 @@ int main() {
           TamanhoVetor = 36500;
           AlocaVetor(&vet, TamanhoVetor);
           AlocaVetor(&vet1, TamanhoVetor);
-          AlocaVetor(&vet2, TamanhoVetor);
-          AlocaVetor(&vet3, TamanhoVetor);
-          AlocaVetor(&vet4, TamanhoVetor);
-          AlocaVetor(&vet5, TamanhoVetor);
 
           for(int i=0; i<TamanhoVetor; i++){
               IniciarMatriz(&matriz);
               vet.ListaIdMatriz[i] = matriz;
               vet1.ListaIdMatriz[i] = matriz;
-              vet2.ListaIdMatriz[i] = matriz;
-              vet3.ListaIdMatriz[i] = matriz;
-              vet4.ListaIdMatriz[i] = matriz;
-              vet5.ListaIdMatriz[i] = matriz;
+
             }
 
             for(int i=0; i<7300; i++){
@@ -698,10 +597,7 @@ int main() {
 
                  Inserir(voo, &vet.ListaIdMatriz[i]);
                  Inserir(voo, &vet1.ListaIdMatriz[i]);
-                 Inserir(voo, &vet2.ListaIdMatriz[i]);
-                 Inserir(voo, &vet3.ListaIdMatriz[i]);
-                 Inserir(voo, &vet4.ListaIdMatriz[i]);
-                 Inserir(voo, &vet5.ListaIdMatriz[i]);
+
               }
             }
 
@@ -709,19 +605,11 @@ int main() {
           TamanhoVetor = 36500;
           AlocaVetor(&vet, TamanhoVetor);
           AlocaVetor(&vet1, TamanhoVetor);
-          AlocaVetor(&vet2, TamanhoVetor);
-          AlocaVetor(&vet3, TamanhoVetor);
-          AlocaVetor(&vet4, TamanhoVetor);
-          AlocaVetor(&vet5, TamanhoVetor);
 
           for(int i=0; i<TamanhoVetor; i++){
               IniciarMatriz(&matriz);
               vet.ListaIdMatriz[i] = matriz;
               vet1.ListaIdMatriz[i] = matriz;
-              vet2.ListaIdMatriz[i] = matriz;
-              vet3.ListaIdMatriz[i] = matriz;
-              vet4.ListaIdMatriz[i] = matriz;
-              vet5.ListaIdMatriz[i] = matriz;
             }
 
             for(int i=0; i<TamanhoVetor; i++){
@@ -773,10 +661,7 @@ int main() {
 
                  Inserir(voo, &vet.ListaIdMatriz[i]);
                  Inserir(voo, &vet1.ListaIdMatriz[i]);
-                 Inserir(voo, &vet2.ListaIdMatriz[i]);
-                 Inserir(voo, &vet3.ListaIdMatriz[i]);
-                 Inserir(voo, &vet4.ListaIdMatriz[i]);
-                 Inserir(voo, &vet5.ListaIdMatriz[i]);
+
               }
             }
 
@@ -784,19 +669,11 @@ int main() {
           TamanhoVetor = 36500;
           AlocaVetor(&vet, TamanhoVetor);
           AlocaVetor(&vet1, TamanhoVetor);
-          AlocaVetor(&vet2, TamanhoVetor);
-          AlocaVetor(&vet3, TamanhoVetor);
-          AlocaVetor(&vet4, TamanhoVetor);
-          AlocaVetor(&vet5, TamanhoVetor);
 
           for(int i=0; i<TamanhoVetor; i++){
               IniciarMatriz(&matriz);
               vet.ListaIdMatriz[i] = matriz;
               vet1.ListaIdMatriz[i] = matriz;
-              vet2.ListaIdMatriz[i] = matriz;
-              vet3.ListaIdMatriz[i] = matriz;
-              vet4.ListaIdMatriz[i] = matriz;
-              vet5.ListaIdMatriz[i] = matriz;
             }
 
             for(int i=0; i<7300; i++){
@@ -848,10 +725,6 @@ int main() {
 
                  Inserir(voo, &vet.ListaIdMatriz[i]);
                  Inserir(voo, &vet1.ListaIdMatriz[i]);
-                 Inserir(voo, &vet2.ListaIdMatriz[i]);
-                 Inserir(voo, &vet3.ListaIdMatriz[i]);
-                 Inserir(voo, &vet4.ListaIdMatriz[i]);
-                 Inserir(voo, &vet5.ListaIdMatriz[i]);
               }
             }
 
@@ -859,19 +732,11 @@ int main() {
           TamanhoVetor = 36500;
           AlocaVetor(&vet, TamanhoVetor);
           AlocaVetor(&vet1, TamanhoVetor);
-          AlocaVetor(&vet2, TamanhoVetor);
-          AlocaVetor(&vet3, TamanhoVetor);
-          AlocaVetor(&vet4, TamanhoVetor);
-          AlocaVetor(&vet5, TamanhoVetor);
 
           for(int i=0; i<TamanhoVetor; i++){
               IniciarMatriz(&matriz);
               vet.ListaIdMatriz[i] = matriz;
               vet1.ListaIdMatriz[i] = matriz;
-              vet2.ListaIdMatriz[i] = matriz;
-              vet3.ListaIdMatriz[i] = matriz;
-              vet4.ListaIdMatriz[i] = matriz;
-              vet5.ListaIdMatriz[i] = matriz;
             }
 
             for(int i=0; i<TamanhoVetor; i++){
@@ -923,113 +788,116 @@ int main() {
 
                  Inserir(voo, &vet.ListaIdMatriz[i]);
                  Inserir(voo, &vet1.ListaIdMatriz[i]);
-                 Inserir(voo, &vet2.ListaIdMatriz[i]);
-                 Inserir(voo, &vet3.ListaIdMatriz[i]);
-                 Inserir(voo, &vet4.ListaIdMatriz[i]);
-                 Inserir(voo, &vet5.ListaIdMatriz[i]);
               }
             }
 
         }
 
         while(1){
-          printf("===================== Menu =====================\n");
-          printf("              Como Deseja Ordenar\n");
-          printf(" 1 - BubbleSort   2 - SelectSort  3 - InsertSort\n");
-          printf(" 4 - ShellSort    5 - QuickSort   6 - HeapSort\n");
-          printf(" 7 - Sair\n");
-          printf("================================================\n");
-          printf("Digite a opcao desejada:");
-          scanf("%d", &m);
+              printf("===================== Menu =====================\n");
+              printf("              Como Deseja Ordenar\n");
+              printf(" 1 - BubbleSort   2 - SelectSort  3 - InsertSort\n");
+              printf(" 4 - ShellSort    5 - QuickSort   6 - HeapSort\n");
+              printf(" 7 - Sair\n");
+              printf("================================================\n");
+              printf("Digite a opcao desejada:");
+              scanf("%d", &m);
 
-          if(m == 1){
-            compara = 0;
-            movimenta = 0;
-            IniciarTimer(&timer);
-            BubbleSort(&vet, TamanhoVetor, &compara, &movimenta);
-            PararTimer(&timer);
-            printf("===================== Menu =====================\n");
-            printf("              Ordenado em BubbleSort\n");
-            printf("Comparações: %ld\n", compara);
-            printf("Movimentações: %ld\n", movimenta);
-            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
-            printf("================================================\n");
+              if(m == 1){
+                compara = 0;
+                movimenta = 0;
+                IniciarTimer(&timer);
+                BubbleSort(&vet1, TamanhoVetor, &compara, &movimenta);
+                PararTimer(&timer);
+                printf("===================== Menu =====================\n");
+                printf("              Ordenado em BubbleSort\n");
+                printf("Comparações: %ld\n", compara);
+                printf("Movimentações: %ld\n", movimenta);
+                printf("Tempo de Execução: %lf\n", TempoTotal(timer));
+                printf("================================================\n");
+                for(int i=0; i<TamanhoVetor; i++){
+                vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-          } else if(m == 2){
-            compara = 0;
-            movimenta = 0;
-            IniciarTimer(&timer);
-            SelectSort(&vet1, TamanhoVetor, &compara, &movimenta);
-            PararTimer(&timer);
-            printf("===================== Menu =====================\n");
-            printf("              Ordenado em SelectSort\n");
-            printf("Comparações: %ld\n", compara);
-            printf("Movimentações: %ld\n", movimenta);
-            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
-            printf("================================================\n");
+              } else if(m == 2){
+                compara = 0;
+                movimenta = 0;
+                IniciarTimer(&timer);
+                SelectSort(&vet1, TamanhoVetor, &compara, &movimenta);
+                PararTimer(&timer);
+                printf("===================== Menu =====================\n");
+                printf("              Ordenado em SelectSort\n");
+                printf("Comparações: %ld\n", compara);
+                printf("Movimentações: %ld\n", movimenta);
+                printf("Tempo de Execução: %lf\n", TempoTotal(timer));
+                printf("================================================\n");
+                for(int i=0; i<TamanhoVetor; i++){
+                vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-          } else if(m == 3){
-            compara = 0;
-            movimenta = 0;
-            IniciarTimer(&timer);
-            InsertSort(&vet2, TamanhoVetor, &compara, &movimenta);
-            PararTimer(&timer);
-            printf("===================== Menu =====================\n");
-            printf("              Ordenado em InsertSort\n");
-            printf("Comparações: %ld\n", compara);
-            printf("Movimentações: %ld\n", movimenta);
-            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
-            printf("================================================\n");
+              } else if(m == 3){
+                compara = 0;
+                movimenta = 0;
+                IniciarTimer(&timer);
+                InsertSort(&vet1, TamanhoVetor, &compara, &movimenta);
+                PararTimer(&timer);
+                printf("===================== Menu =====================\n");
+                printf("              Ordenado em InsertSort\n");
+                printf("Comparações: %ld\n", compara);
+                printf("Movimentações: %ld\n", movimenta);
+                printf("Tempo de Execução: %lf\n", TempoTotal(timer));
+                printf("================================================\n");
+                for(int i=0; i<TamanhoVetor; i++){
+                vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-          } else if(m == 4){
-            compara = 0;
-            movimenta = 0;
-            IniciarTimer(&timer);
-            ShellSort(&vet3, TamanhoVetor, &compara, &movimenta);
-            PararTimer(&timer);
-            printf("===================== Menu =====================\n");
-            printf("              Ordenado em ShellSort\n");
-            printf("Comparações: %ld\n", compara);
-            printf("Movimentações: %ld\n", movimenta);
-            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
-            printf("================================================\n");
+              } else if(m == 4){
+                compara = 0;
+                movimenta = 0;
+                IniciarTimer(&timer);
+                ShellSort(&vet1, TamanhoVetor, &compara, &movimenta);
+                PararTimer(&timer);
+                printf("===================== Menu =====================\n");
+                printf("              Ordenado em ShellSort\n");
+                printf("Comparações: %ld\n", compara);
+                printf("Movimentações: %ld\n", movimenta);
+                printf("Tempo de Execução: %lf\n", TempoTotal(timer));
+                printf("================================================\n");
+                for(int i=0; i<TamanhoVetor; i++){
+                vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
+              } else if(m == 5){
+                compara = 0;
+                movimenta = 0;
+                IniciarTimer(&timer);
+                QuickSort(&vet1, TamanhoVetor, &compara, &movimenta);
+                PararTimer(&timer);
+                printf("===================== Menu =====================\n");
+                printf("              Ordenado em QuickSort\n");
+                printf("Comparações: %ld\n", compara);
+                printf("Movimentações: %ld\n", movimenta);
+                printf("Tempo de Execução: %lf\n", TempoTotal(timer));
+                printf("================================================\n");
+                for(int i=0; i<TamanhoVetor; i++){
+                vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-          } else if(m == 5){
-            compara = 0;
-            movimenta = 0;
-            IniciarTimer(&timer);
-            QuickSort(&vet4, TamanhoVetor, &compara, &movimenta);
-            PararTimer(&timer);
-            printf("===================== Menu =====================\n");
-            printf("              Ordenado em QuickSort\n");
-            printf("Comparações: %ld\n", compara);
-            printf("Movimentações: %ld\n", movimenta);
-            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
-            printf("================================================\n");
+              } else if(m == 6){
+                compara = 0;
+                movimenta = 0;
+                IniciarTimer(&timer);
+                HeapSort(&vet1, TamanhoVetor, &compara, &movimenta);
+                PararTimer(&timer);
+                printf("===================== Menu =====================\n");
+                printf("              Ordenado em HeapSort\n");
+                printf("Comparações: %ld\n", compara);
+                printf("Movimentações: %ld\n", movimenta);
+                printf("Tempo de Execução: %lf\n", TempoTotal(timer));
+                printf("================================================\n");
+                for(int i=0; i<TamanhoVetor; i++){
+                vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-          } else if(m == 6){
-            compara = 0;
-            movimenta = 0;
-            IniciarTimer(&timer);
-            HeapSort(&vet5, TamanhoVetor, &compara, &movimenta);
-            PararTimer(&timer);
-            printf("===================== Menu =====================\n");
-            printf("              Ordenado em HeapSort\n");
-            printf("Comparações: %ld\n", compara);
-            printf("Movimentações: %ld\n", movimenta);
-            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
-            printf("================================================\n");
-
-          } else if(m == 7){
-            DesalocaVetor(&vet);   //Desalocando Vetores utilizados//
-            DesalocaVetor(&vet1);
-            DesalocaVetor(&vet2);
-            DesalocaVetor(&vet3);
-            DesalocaVetor(&vet4);
-            DesalocaVetor(&vet5);
-            break;
-          }
-        }
+              } else if(m == 7){
+                DesalocaVetor(&vet);   //Desalocando Vetores utilizados//
+                DesalocaVetor(&vet1);
+                break;
+              }
+            }
 
       } else if(n == 2){
         FILE *f;
@@ -1052,19 +920,12 @@ int main() {
             TamanhoVetor = 365;
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
-            AlocaVetor(&vet2, TamanhoVetor);
-            AlocaVetor(&vet3, TamanhoVetor);
-            AlocaVetor(&vet4, TamanhoVetor);
-            AlocaVetor(&vet5, TamanhoVetor);
+
 
             for(int i=0; i<TamanhoVetor; i++){
                 IniciarMatriz(&matriz);
                 vet.ListaIdMatriz[i] = matriz;
                 vet1.ListaIdMatriz[i] = matriz;
-                vet2.ListaIdMatriz[i] = matriz;
-                vet3.ListaIdMatriz[i] = matriz;
-                vet4.ListaIdMatriz[i] = matriz;
-                vet5.ListaIdMatriz[i] = matriz;
               }
 
             for(int i=0; i<73; i++){
@@ -1107,10 +968,6 @@ int main() {
 
                   Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
                   Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
 
               }
             }
@@ -1118,19 +975,11 @@ int main() {
             TamanhoVetor = 365;
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
-            AlocaVetor(&vet2, TamanhoVetor);
-            AlocaVetor(&vet3, TamanhoVetor);
-            AlocaVetor(&vet4, TamanhoVetor);
-            AlocaVetor(&vet5, TamanhoVetor);
 
             for(int i=0; i<TamanhoVetor; i++){
                 IniciarMatriz(&matriz);
                 vet.ListaIdMatriz[i] = matriz;
                 vet1.ListaIdMatriz[i] = matriz;
-                vet2.ListaIdMatriz[i] = matriz;
-                vet3.ListaIdMatriz[i] = matriz;
-                vet4.ListaIdMatriz[i] = matriz;
-                vet5.ListaIdMatriz[i] = matriz;
               }
 
             for(int i=0; i<TamanhoVetor; i++){
@@ -1175,10 +1024,6 @@ int main() {
 
                   Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
                   Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
 
               }
             }
@@ -1186,19 +1031,11 @@ int main() {
             TamanhoVetor = 365;
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
-            AlocaVetor(&vet2, TamanhoVetor);
-            AlocaVetor(&vet3, TamanhoVetor);
-            AlocaVetor(&vet4, TamanhoVetor);
-            AlocaVetor(&vet5, TamanhoVetor);
 
             for(int i=0; i<TamanhoVetor; i++){
                 IniciarMatriz(&matriz);
                 vet.ListaIdMatriz[i] = matriz;
                 vet1.ListaIdMatriz[i] = matriz;
-                vet2.ListaIdMatriz[i] = matriz;
-                vet3.ListaIdMatriz[i] = matriz;
-                vet4.ListaIdMatriz[i] = matriz;
-                vet5.ListaIdMatriz[i] = matriz;
               }
 
             for(int i=0; i<73; i++){
@@ -1241,10 +1078,6 @@ int main() {
 
                   Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
                   Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
 
               }
             }
@@ -1252,19 +1085,11 @@ int main() {
             TamanhoVetor = 365;
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
-            AlocaVetor(&vet2, TamanhoVetor);
-            AlocaVetor(&vet3, TamanhoVetor);
-            AlocaVetor(&vet4, TamanhoVetor);
-            AlocaVetor(&vet5, TamanhoVetor);
 
             for(int i=0; i<TamanhoVetor; i++){
                 IniciarMatriz(&matriz);
                 vet.ListaIdMatriz[i] = matriz;
                 vet1.ListaIdMatriz[i] = matriz;
-                vet2.ListaIdMatriz[i] = matriz;
-                vet3.ListaIdMatriz[i] = matriz;
-                vet4.ListaIdMatriz[i] = matriz;
-                vet5.ListaIdMatriz[i] = matriz;
               }
 
             for(int i=0; i<TamanhoVetor; i++){
@@ -1309,10 +1134,6 @@ int main() {
 
                   Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
                   Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
 
               }
             }
@@ -1320,19 +1141,11 @@ int main() {
             TamanhoVetor = 3650;
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
-            AlocaVetor(&vet2, TamanhoVetor);
-            AlocaVetor(&vet3, TamanhoVetor);
-            AlocaVetor(&vet4, TamanhoVetor);
-            AlocaVetor(&vet5, TamanhoVetor);
 
             for(int i=0; i<TamanhoVetor; i++){
                 IniciarMatriz(&matriz);
                 vet.ListaIdMatriz[i] = matriz;
                 vet1.ListaIdMatriz[i] = matriz;
-                vet2.ListaIdMatriz[i] = matriz;
-                vet3.ListaIdMatriz[i] = matriz;
-                vet4.ListaIdMatriz[i] = matriz;
-                vet5.ListaIdMatriz[i] = matriz;
               }
 
             for(int i=0; i<730; i++){
@@ -1379,10 +1192,6 @@ int main() {
 
                   Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
                   Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
 
               }
             }
@@ -1390,19 +1199,11 @@ int main() {
             TamanhoVetor = 3650;
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
-            AlocaVetor(&vet2, TamanhoVetor);
-            AlocaVetor(&vet3, TamanhoVetor);
-            AlocaVetor(&vet4, TamanhoVetor);
-            AlocaVetor(&vet5, TamanhoVetor);
 
             for(int i=0; i<TamanhoVetor; i++){
                 IniciarMatriz(&matriz);
                 vet.ListaIdMatriz[i] = matriz;
                 vet1.ListaIdMatriz[i] = matriz;
-                vet2.ListaIdMatriz[i] = matriz;
-                vet3.ListaIdMatriz[i] = matriz;
-                vet4.ListaIdMatriz[i] = matriz;
-                vet5.ListaIdMatriz[i] = matriz;
               }
 
             for(int i=0; i<TamanhoVetor; i++){
@@ -1449,10 +1250,6 @@ int main() {
 
                   Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
                   Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
 
               }
             }
@@ -1460,19 +1257,11 @@ int main() {
             TamanhoVetor = 3650;
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
-            AlocaVetor(&vet2, TamanhoVetor);
-            AlocaVetor(&vet3, TamanhoVetor);
-            AlocaVetor(&vet4, TamanhoVetor);
-            AlocaVetor(&vet5, TamanhoVetor);
 
             for(int i=0; i<TamanhoVetor; i++){
                 IniciarMatriz(&matriz);
                 vet.ListaIdMatriz[i] = matriz;
                 vet1.ListaIdMatriz[i] = matriz;
-                vet2.ListaIdMatriz[i] = matriz;
-                vet3.ListaIdMatriz[i] = matriz;
-                vet4.ListaIdMatriz[i] = matriz;
-                vet5.ListaIdMatriz[i] = matriz;
               }
 
             for(int i=0; i<730; i++){
@@ -1519,10 +1308,6 @@ int main() {
 
                   Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
                   Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
 
               }
             }
@@ -1530,19 +1315,11 @@ int main() {
             TamanhoVetor = 3650;
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
-            AlocaVetor(&vet2, TamanhoVetor);
-            AlocaVetor(&vet3, TamanhoVetor);
-            AlocaVetor(&vet4, TamanhoVetor);
-            AlocaVetor(&vet5, TamanhoVetor);
 
             for(int i=0; i<TamanhoVetor; i++){
                 IniciarMatriz(&matriz);
                 vet.ListaIdMatriz[i] = matriz;
                 vet1.ListaIdMatriz[i] = matriz;
-                vet2.ListaIdMatriz[i] = matriz;
-                vet3.ListaIdMatriz[i] = matriz;
-                vet4.ListaIdMatriz[i] = matriz;
-                vet5.ListaIdMatriz[i] = matriz;
               }
 
             for(int i=0; i<TamanhoVetor; i++){
@@ -1589,10 +1366,6 @@ int main() {
 
                   Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
                   Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
 
               }
             }
@@ -1600,19 +1373,11 @@ int main() {
             TamanhoVetor = 36500;
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
-            AlocaVetor(&vet2, TamanhoVetor);
-            AlocaVetor(&vet3, TamanhoVetor);
-            AlocaVetor(&vet4, TamanhoVetor);
-            AlocaVetor(&vet5, TamanhoVetor);
 
             for(int i=0; i<TamanhoVetor; i++){
                 IniciarMatriz(&matriz);
                 vet.ListaIdMatriz[i] = matriz;
                 vet1.ListaIdMatriz[i] = matriz;
-                vet2.ListaIdMatriz[i] = matriz;
-                vet3.ListaIdMatriz[i] = matriz;
-                vet4.ListaIdMatriz[i] = matriz;
-                vet5.ListaIdMatriz[i] = matriz;
               }
 
             for(int i=0; i<7300; i++){
@@ -1661,10 +1426,6 @@ int main() {
 
                   Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
                   Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
 
               }
             }
@@ -1672,19 +1433,11 @@ int main() {
             TamanhoVetor = 36500;
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
-            AlocaVetor(&vet2, TamanhoVetor);
-            AlocaVetor(&vet3, TamanhoVetor);
-            AlocaVetor(&vet4, TamanhoVetor);
-            AlocaVetor(&vet5, TamanhoVetor);
 
             for(int i=0; i<TamanhoVetor; i++){
                 IniciarMatriz(&matriz);
                 vet.ListaIdMatriz[i] = matriz;
                 vet1.ListaIdMatriz[i] = matriz;
-                vet2.ListaIdMatriz[i] = matriz;
-                vet3.ListaIdMatriz[i] = matriz;
-                vet4.ListaIdMatriz[i] = matriz;
-                vet5.ListaIdMatriz[i] = matriz;
               }
 
             for(int i=0; i<TamanhoVetor; i++){
@@ -1733,10 +1486,6 @@ int main() {
 
                   Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
                   Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
 
               }
             }
@@ -1744,19 +1493,11 @@ int main() {
             TamanhoVetor = 36500;
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
-            AlocaVetor(&vet2, TamanhoVetor);
-            AlocaVetor(&vet3, TamanhoVetor);
-            AlocaVetor(&vet4, TamanhoVetor);
-            AlocaVetor(&vet5, TamanhoVetor);
 
             for(int i=0; i<TamanhoVetor; i++){
                 IniciarMatriz(&matriz);
                 vet.ListaIdMatriz[i] = matriz;
                 vet1.ListaIdMatriz[i] = matriz;
-                vet2.ListaIdMatriz[i] = matriz;
-                vet3.ListaIdMatriz[i] = matriz;
-                vet4.ListaIdMatriz[i] = matriz;
-                vet5.ListaIdMatriz[i] = matriz;
               }
 
             for(int i=0; i<7300; i++){
@@ -1805,10 +1546,6 @@ int main() {
 
                   Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
                   Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
 
               }
             }
@@ -1816,19 +1553,11 @@ int main() {
             TamanhoVetor = 36500;
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
-            AlocaVetor(&vet2, TamanhoVetor);
-            AlocaVetor(&vet3, TamanhoVetor);
-            AlocaVetor(&vet4, TamanhoVetor);
-            AlocaVetor(&vet5, TamanhoVetor);
 
             for(int i=0; i<TamanhoVetor; i++){
                 IniciarMatriz(&matriz);
                 vet.ListaIdMatriz[i] = matriz;
                 vet1.ListaIdMatriz[i] = matriz;
-                vet2.ListaIdMatriz[i] = matriz;
-                vet3.ListaIdMatriz[i] = matriz;
-                vet4.ListaIdMatriz[i] = matriz;
-                vet5.ListaIdMatriz[i] = matriz;
               }
 
             for(int i=0; i<TamanhoVetor; i++){
@@ -1877,10 +1606,6 @@ int main() {
 
                   Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
                   Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet2.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet3.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet4.ListaIdMatriz[VetorIndice[i]]);
-                  Inserir(voo, &vet5.ListaIdMatriz[VetorIndice[i]]);
 
               }
             }
@@ -1889,104 +1614,111 @@ int main() {
           fclose(f);
 
 
-        while(1){
-          printf("===================== Menu =====================\n");
-          printf("              Como Deseja Ordenar\n");
-          printf(" 1 - BubbleSort   2 - SelectSort  3 - InsertSort\n");
-          printf(" 4 - ShellSort    5 - QuickSort   6 - HeapSort\n");
-          printf(" 7 - Sair\n");
-          printf("================================================\n");
-          printf("Digite a opcao desejada:");
-          scanf("%d", &m);
+          while(1){
+                printf("===================== Menu =====================\n");
+                printf("              Como Deseja Ordenar\n");
+                printf(" 1 - BubbleSort   2 - SelectSort  3 - InsertSort\n");
+                printf(" 4 - ShellSort    5 - QuickSort   6 - HeapSort\n");
+                printf(" 7 - Sair\n");
+                printf("================================================\n");
+                printf("Digite a opcao desejada:");
+                scanf("%d", &m);
 
-          if(m == 1){
-            compara = 0;
-            movimenta = 0;
-            IniciarTimer(&timer);
-            BubbleSort(&vet, TamanhoVetor, &compara, &movimenta);
-            PararTimer(&timer);
-            printf("===================== Menu =====================\n");
-            printf("              Ordenado em BubbleSort\n");
-            printf("Comparações: %ld\n", compara);
-            printf("Movimentações: %ld\n", movimenta);
-            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
-            printf("================================================\n");
+                if(m == 1){
+                  compara = 0;
+                  movimenta = 0;
+                  IniciarTimer(&timer);
+                  BubbleSort(&vet1, TamanhoVetor, &compara, &movimenta);
+                  PararTimer(&timer);
+                  printf("===================== Menu =====================\n");
+                  printf("              Ordenado em BubbleSort\n");
+                  printf("Comparações: %ld\n", compara);
+                  printf("Movimentações: %ld\n", movimenta);
+                  printf("Tempo de Execução: %lf\n", TempoTotal(timer));
+                  printf("================================================\n");
+                  for(int i=0; i<TamanhoVetor; i++){
+                  vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-          } else if(m == 2){
-            compara = 0;
-            movimenta = 0;
-            IniciarTimer(&timer);
-            SelectSort(&vet1, TamanhoVetor, &compara, &movimenta);
-            PararTimer(&timer);
-            printf("===================== Menu =====================\n");
-            printf("              Ordenado em SelectSort\n");
-            printf("Comparações: %ld\n", compara);
-            printf("Movimentações: %ld\n", movimenta);
-            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
-            printf("================================================\n");
+                } else if(m == 2){
+                  compara = 0;
+                  movimenta = 0;
+                  IniciarTimer(&timer);
+                  SelectSort(&vet1, TamanhoVetor, &compara, &movimenta);
+                  PararTimer(&timer);
+                  printf("===================== Menu =====================\n");
+                  printf("              Ordenado em SelectSort\n");
+                  printf("Comparações: %ld\n", compara);
+                  printf("Movimentações: %ld\n", movimenta);
+                  printf("Tempo de Execução: %lf\n", TempoTotal(timer));
+                  printf("================================================\n");
+                  for(int i=0; i<TamanhoVetor; i++){
+                  vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-          } else if(m == 3){
-            compara = 0;
-            movimenta = 0;
-            IniciarTimer(&timer);
-            InsertSort(&vet2, TamanhoVetor, &compara, &movimenta);
-            PararTimer(&timer);
-            printf("===================== Menu =====================\n");
-            printf("              Ordenado em InsertSort\n");
-            printf("Comparações: %ld\n", compara);
-            printf("Movimentações: %ld\n", movimenta);
-            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
-            printf("================================================\n");
+                } else if(m == 3){
+                  compara = 0;
+                  movimenta = 0;
+                  IniciarTimer(&timer);
+                  InsertSort(&vet1, TamanhoVetor, &compara, &movimenta);
+                  PararTimer(&timer);
+                  printf("===================== Menu =====================\n");
+                  printf("              Ordenado em InsertSort\n");
+                  printf("Comparações: %ld\n", compara);
+                  printf("Movimentações: %ld\n", movimenta);
+                  printf("Tempo de Execução: %lf\n", TempoTotal(timer));
+                  printf("================================================\n");
+                  for(int i=0; i<TamanhoVetor; i++){
+                  vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-          } else if(m == 4){
-            compara = 0;
-            movimenta = 0;
-            IniciarTimer(&timer);
-            ShellSort(&vet3, TamanhoVetor, &compara, &movimenta);
-            PararTimer(&timer);
-            printf("===================== Menu =====================\n");
-            printf("              Ordenado em ShellSort\n");
-            printf("Comparações: %ld\n", compara);
-            printf("Movimentações: %ld\n", movimenta);
-            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
-            printf("================================================\n");
+                } else if(m == 4){
+                  compara = 0;
+                  movimenta = 0;
+                  IniciarTimer(&timer);
+                  ShellSort(&vet1, TamanhoVetor, &compara, &movimenta);
+                  PararTimer(&timer);
+                  printf("===================== Menu =====================\n");
+                  printf("              Ordenado em ShellSort\n");
+                  printf("Comparações: %ld\n", compara);
+                  printf("Movimentações: %ld\n", movimenta);
+                  printf("Tempo de Execução: %lf\n", TempoTotal(timer));
+                  printf("================================================\n");
+                  for(int i=0; i<TamanhoVetor; i++){
+                  vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
+                } else if(m == 5){
+                  compara = 0;
+                  movimenta = 0;
+                  IniciarTimer(&timer);
+                  QuickSort(&vet1, TamanhoVetor, &compara, &movimenta);
+                  PararTimer(&timer);
+                  printf("===================== Menu =====================\n");
+                  printf("              Ordenado em QuickSort\n");
+                  printf("Comparações: %ld\n", compara);
+                  printf("Movimentações: %ld\n", movimenta);
+                  printf("Tempo de Execução: %lf\n", TempoTotal(timer));
+                  printf("================================================\n");
+                  for(int i=0; i<TamanhoVetor; i++){
+                  vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-          } else if(m == 5){
-            compara = 0;
-            movimenta = 0;
-            IniciarTimer(&timer);
-            QuickSort(&vet4, TamanhoVetor, &compara, &movimenta);
-            PararTimer(&timer);
-            printf("===================== Menu =====================\n");
-            printf("              Ordenado em QuickSort\n");
-            printf("Comparações: %ld\n", compara);
-            printf("Movimentações: %ld\n", movimenta);
-            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
-            printf("================================================\n");
+                } else if(m == 6){
+                  compara = 0;
+                  movimenta = 0;
+                  IniciarTimer(&timer);
+                  HeapSort(&vet1, TamanhoVetor, &compara, &movimenta);
+                  PararTimer(&timer);
+                  printf("===================== Menu =====================\n");
+                  printf("              Ordenado em HeapSort\n");
+                  printf("Comparações: %ld\n", compara);
+                  printf("Movimentações: %ld\n", movimenta);
+                  printf("Tempo de Execução: %lf\n", TempoTotal(timer));
+                  printf("================================================\n");
+                  for(int i=0; i<TamanhoVetor; i++){
+                  vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-          } else if(m == 6){
-            compara = 0;
-            movimenta = 0;
-            IniciarTimer(&timer);
-            HeapSort(&vet5, TamanhoVetor, &compara, &movimenta);
-            PararTimer(&timer);
-            printf("===================== Menu =====================\n");
-            printf("              Ordenado em HeapSort\n");
-            printf("Comparações: %ld\n", compara);
-            printf("Movimentações: %ld\n", movimenta);
-            printf("Tempo de Execução: %lf\n", TempoTotal(timer));
-            printf("================================================\n");
-
-          } else if(m == 7){
-            DesalocaVetor(&vet);   //Desalocando Vetores utilizados//
-            DesalocaVetor(&vet1);
-            DesalocaVetor(&vet2);
-            DesalocaVetor(&vet3);
-            DesalocaVetor(&vet4);
-            DesalocaVetor(&vet5);
-            break;
-          }
-        }
+                } else if(m == 7){
+                  DesalocaVetor(&vet);   //Desalocando Vetores utilizados//
+                  DesalocaVetor(&vet1);
+                  break;
+                }
+              }
        }
       } else if(n == 3){
         int f = 0;

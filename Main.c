@@ -11,17 +11,19 @@ int main() {
     srand((unsigned)time(NULL));
 
     /* Declaração de variavéis auxiliares */
-    int m, pista, n, TamanhoVetor;
+    int m, pista, n=0, TamanhoVetor;
     long int compara, movimenta;
     char auxHr, auxHr1, auxHr2, auxHr3,auxHr4, Hr[10], Aero[50], Aero1[50];
     char auxAero[2], auxAero1[2], auxAero2[2];
 
-    while(1){
       printf("\n===================== Menu =====================\n");
-      printf("    1 - Automatico   2 - Arquivo   3 - Sair\n");
+      printf("   1 - Automatico               2 - Arquivo\n");
       printf("================================================\n");
-      printf("Digite a opcao desejada:");
-      scanf("%d", &n);
+      while(n != 1 && n != 2){
+        printf("Digite a opcao desejada:");
+        scanf("%d",&n);
+        if(n != 1 && n != 2){
+          printf("Opcao invalida!\n");}}
 
       if(n == 1){
         printf("===================== Menu =====================\n");
@@ -893,10 +895,21 @@ int main() {
                 vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
               } else if(m == 7){
-                DesalocaVetor(&vet);   //Desalocando Vetores utilizados//
-                DesalocaVetor(&vet1);
-                break;
-              }
+                  int f = 0;
+                printf("\nDeseja realmente finalizar a execucao do programa?\n\t1.Sim\n\t2.Nao\n");
+                while(f != 1 && f != 2){
+                  printf("Digite a opcao desejada:");
+                  scanf("%d",&f);
+                  if(f != 1 && f != 2){
+                    printf("Opcao invalida!\n");}}
+                if(f == 1){
+                  printf("\n\t\t  -----------------------------\n\n\t\t   Desenvolvedores:\n\t\t    Yuri Dimitre - 3485\n\t\t    Samuel Sena - 3494\n\t\t    Estela Miranda - 3305\n\n\t\t  OBRIGADO POR UTILIZAR O PROGRAMA!\n");
+                  DesalocaVetor(&vet);   //Desalocando Vetores utilizados//
+                  DesalocaVetor(&vet1);
+                  break;}
+                if(f == 2){
+                  printf("\n\tFinalizacao cancelada!\n");}
+                }
             }
 
       } else if(n == 2){
@@ -1714,29 +1727,24 @@ int main() {
                   vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
                 } else if(m == 7){
-                  DesalocaVetor(&vet);   //Desalocando Vetores utilizados//
-                  DesalocaVetor(&vet1);
-                  break;
-                }
-              }
-       }
-      } else if(n == 3){
-        int f = 0;
-      printf("\nDeseja realmente finalizar a execucao do programa?\n\t1.Sim\n\t2.Nao\n");
-      while(f != 1 && f != 2){
-        printf("Digite a opcao desejada:");
-        scanf("%d",&f);
-        if(f != 1 && f != 2){
-          printf("Opcao invalida!\n");}}
-      if(f == 1){
-        printf("\n\t\t  -----------------------------\n\n\t\t   Desenvolvedores:\n\t\t    Yuri Dimitre - 3485\n\t\t    Samuel Sena - 3494\n\t\t    Estela Miranda - 3305\n\n\t\t  OBRIGADO POR UTILIZAR O PROGRAMA!\n");
-        break;}
-      if(f == 2){
-        printf("\n\tFinalizacao cancelada!\n");}
+                    int f = 0;
+                  printf("\nDeseja realmente finalizar a execucao do programa?\n\t1.Sim\n\t2.Nao\n");
+                  while(f != 1 && f != 2){
+                    printf("Digite a opcao desejada:");
+                    scanf("%d",&f);
+                    if(f != 1 && f != 2){
+                      printf("Opcao invalida!\n");}}
+                  if(f == 1){
+                    printf("\n\t\t  -----------------------------\n\n\t\t   Desenvolvedores:\n\t\t    Yuri Dimitre - 3485\n\t\t    Samuel Sena - 3494\n\t\t    Estela Miranda - 3305\n\n\t\t  OBRIGADO POR UTILIZAR O PROGRAMA!\n");
+                    DesalocaVetor(&vet);   //Desalocando Vetores utilizados//
+                    DesalocaVetor(&vet1);
+                    break;}
+                  if(f == 2){
+                    printf("\n\tFinalizacao cancelada!\n");}
+                  }
+            }
+         }
       }
-      else{
-        printf("\nOpcao invalida!\n");
-      }
-    }
+
     return 0;
 }

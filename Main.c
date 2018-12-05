@@ -910,24 +910,30 @@ int main() {
                 if(f == 2){
                   printf("\n\tFinalizacao cancelada!\n");}
                 }
+                else{
+                  printf("Opcao invalida!\n");
+                }
             }
 
       } else if(n == 2){
+        while(1){
         FILE *f;
         char nome_arquivo[20], palavra[10];
-        int VetorIndice[73], n;
+        int VetorIndice[73], n=0;
         printf("===================== Menu =====================\n");
         printf("              Escolha um Cenario\n");
         printf("================================================\n");
-        printf("Entre:");
+        printf("Entre com o cenario:");
         scanf("%d", &n);
+        if(n!=0 && n<=12){
         printf("\nDigite o nome do arquivo que deseja abrir:");
-        scanf("%s",nome_arquivo);
+        scanf("%s",nome_arquivo);}
 
         f = fopen(nome_arquivo,"r");
         if(f == NULL){
         printf("\n\tErro!Nao foi possivel abrir arquivo!\n");}
         else{
+
           printf("\n\tArquivo aberto com sucesso!\n");
           if(n == 1){
             TamanhoVetor = 365;
@@ -1416,18 +1422,22 @@ int main() {
                   fscanf(f, "%s", palavra);
                   strcpy(Hr, palavra);
                   setHr_dec(&voo, Hr);
+                  printf("%s\n", voo.Hr_dec);
 
                   fscanf(f, "%s", palavra);
                   strcpy(Hr, palavra);
                   setHr_pouso(&voo, Hr);
+                  printf("%s\n", voo.Hr_pouso);
 
                   fscanf(f, "%s", palavra);
                   strcpy(Aero, palavra);
                   setAeroporto_dec(&voo, Aero);
+                  printf("%s\n", voo.aeroporto_dec);
 
                   fscanf(f, "%s", palavra);
                   strcpy(Aero, palavra);
                   setAeroporto_pouso(&voo, Aero);
+                  printf("%s\n", voo.aeroporto_pouso);
 
                   fscanf(f, "%s", palavra);
                   if(strlen(palavra) == 1){
@@ -1742,7 +1752,11 @@ int main() {
                   if(f == 2){
                     printf("\n\tFinalizacao cancelada!\n");}
                   }
+                  else{
+                    printf("Opcao invalida!\n");
+                  }
             }
+            break;}
          }
       }
 

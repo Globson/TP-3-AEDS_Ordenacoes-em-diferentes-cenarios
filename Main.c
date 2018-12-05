@@ -154,7 +154,6 @@ int main() {
                  strcat(auxAero1, auxAero2);
                  strcpy(Aero1, auxAero);
                  setAeroporto_pouso(&voo, Aero1);
-
                  pista = rand()%10;
                  setId_pista(&voo, pista);
 

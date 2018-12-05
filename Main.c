@@ -48,6 +48,7 @@ int main() {
             }
 
             for(int i=0; i<73; i++){
+              int r = rand()%73;
               for(int j=0; j<10; j++){
                  IniciarVoo(&voo);
 
@@ -94,8 +95,8 @@ int main() {
                  pista = rand()%10;
                  setId_pista(&voo, pista);
 
-                 Inserir(voo, &vet.ListaIdMatriz[i]);
-                 Inserir(voo, &vet1.ListaIdMatriz[i]);
+                 Inserir(voo, &vet.ListaIdMatriz[r]);
+                 Inserir(voo, &vet1.ListaIdMatriz[r]);
               }
             }
 
@@ -174,6 +175,7 @@ int main() {
             }
 
             for(int i=0; i<73; i++){
+              int r = rand()%73;
               for(int j=0; j<100; j++){
                  IniciarVoo(&voo);
 
@@ -220,8 +222,8 @@ int main() {
                  pista = rand()%10;
                  setId_pista(&voo, pista);
 
-                 Inserir(voo, &vet.ListaIdMatriz[i]);
-                 Inserir(voo, &vet1.ListaIdMatriz[i]);
+                 Inserir(voo, &vet.ListaIdMatriz[r]);
+                 Inserir(voo, &vet1.ListaIdMatriz[r]);
               }
             }
 
@@ -300,6 +302,7 @@ int main() {
             }
 
             for(int i=0; i<730; i++){
+              int r = rand()%730;
               for(int j=0; j<10; j++){
                  IniciarVoo(&voo);
 
@@ -346,8 +349,8 @@ int main() {
                  pista = rand()%10;
                  setId_pista(&voo, pista);
 
-                 Inserir(voo, &vet.ListaIdMatriz[i]);
-                 Inserir(voo, &vet1.ListaIdMatriz[i]);
+                 Inserir(voo, &vet.ListaIdMatriz[r]);
+                 Inserir(voo, &vet1.ListaIdMatriz[r]);
               }
             }
 
@@ -426,6 +429,7 @@ int main() {
             }
 
             for(int i=0; i<730; i++){
+              int r = rand()%730;
               for(int j=0; j<100; j++){
                  IniciarVoo(&voo);
 
@@ -472,8 +476,8 @@ int main() {
                  pista = rand()%10;
                  setId_pista(&voo, pista);
 
-                 Inserir(voo, &vet.ListaIdMatriz[i]);
-                 Inserir(voo, &vet1.ListaIdMatriz[i]);
+                 Inserir(voo, &vet.ListaIdMatriz[r]);
+                 Inserir(voo, &vet1.ListaIdMatriz[r]);
               }
             }
 
@@ -555,6 +559,7 @@ int main() {
             }
 
             for(int i=0; i<7300; i++){
+              int r = rand()%7300;
               for(int j=0; j<10; j++){
                  IniciarVoo(&voo);
 
@@ -601,8 +606,8 @@ int main() {
                  pista = rand()%10;
                  setId_pista(&voo, pista);
 
-                 Inserir(voo, &vet.ListaIdMatriz[i]);
-                 Inserir(voo, &vet1.ListaIdMatriz[i]);
+                 Inserir(voo, &vet.ListaIdMatriz[r]);
+                 Inserir(voo, &vet1.ListaIdMatriz[r]);
 
               }
             }
@@ -683,6 +688,7 @@ int main() {
             }
 
             for(int i=0; i<7300; i++){
+              int r = rand()%7300;
               for(int j=0; j<100; j++){
                  IniciarVoo(&voo);
 
@@ -729,8 +735,8 @@ int main() {
                  pista = rand()%10;
                  setId_pista(&voo, pista);
 
-                 Inserir(voo, &vet.ListaIdMatriz[i]);
-                 Inserir(voo, &vet1.ListaIdMatriz[i]);
+                 Inserir(voo, &vet.ListaIdMatriz[r]);
+                 Inserir(voo, &vet1.ListaIdMatriz[r]);
               }
             }
 

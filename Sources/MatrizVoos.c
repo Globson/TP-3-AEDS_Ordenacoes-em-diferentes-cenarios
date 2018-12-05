@@ -3,7 +3,7 @@
 /* Função que Inicia a Matriz com base na Função de Inicialização dos dados do Item da Matriz */
 void IniciarMatriz(TipoMatriz *matriz){
     int i,j;
-    matriz->idMatriz = (rand()%365);
+    matriz->idMatriz = (rand()%36500);
 
     for(i=0; i<24; i++){
         for(j=0; j<24; j++){

@@ -26,11 +26,16 @@ int main() {
           printf("Opcao invalida!\n");}}
 
       if(n == 1){
+        n=0;
         printf("===================== Menu =====================\n");
         printf("              Escolha um Cenario\n");
         printf("================================================\n");
         printf("Entre:");
-        scanf("%d", &n);
+        while(n != 1 && n != 2 && n != 2 && n != 3 && 4 != 5 && n != 6 && n != 7 && n != 8 && n != 9 && n != 10 && n != 11 && n != 12){
+          printf("Digite a opcao desejada:");
+          scanf("%d",&n);
+          if(n != 1 && n != 2 && n != 2 && n != 3 && 4 != 5 && n != 6 && n != 7 && n != 8 && n != 9 && n != 10 && n != 11 && n != 12){
+            printf("Opcao invalida!\n");}}
 
         if(n == 1){
           TamanhoVetor = 365;
@@ -107,7 +112,7 @@ int main() {
             }
 
             for(int i=0; i<TamanhoVetor; i++){
-              for(int j=0; j<100; j++){
+              for(int j=0; j<10; j++){
                  IniciarVoo(&voo);
 
                  auxHr = rand()%2 + '0';
@@ -170,7 +175,7 @@ int main() {
             }
 
             for(int i=0; i<73; i++){
-              for(int j=0; j<10; j++){
+              for(int j=0; j<100; j++){
                  IniciarVoo(&voo);
 
                  auxHr = rand()%2 + '0';

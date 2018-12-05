@@ -919,7 +919,7 @@ int main() {
         while(1){
         FILE *f;
         char nome_arquivo[20], palavra[10];
-        int VetorIndice[73], n=0;
+        int n=0;
         printf("===================== Menu =====================\n");
         printf("              Escolha um Cenario\n");
         printf("================================================\n");
@@ -937,6 +937,7 @@ int main() {
           printf("\n\tArquivo aberto com sucesso!\n");
           if(n == 1){
             TamanhoVetor = 365;
+            int VetorIndice[73];
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
 
@@ -992,6 +993,7 @@ int main() {
             }
           } else if(n == 2){
             TamanhoVetor = 365;
+            int VetorIndice[TamanhoVetor];
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
 
@@ -1048,6 +1050,7 @@ int main() {
             }
           } else if(n == 3){
             TamanhoVetor = 365;
+            int VetorIndice[73];
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
 
@@ -1102,6 +1105,7 @@ int main() {
             }
           } else if(n == 4){
             TamanhoVetor = 365;
+            int VetorIndice[TamanhoVetor];
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
 
@@ -1158,6 +1162,7 @@ int main() {
             }
           } else if(n == 5){
             TamanhoVetor = 3650;
+            int VetorIndice[730];
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
 
@@ -1216,6 +1221,7 @@ int main() {
             }
           } else if(n == 6){
             TamanhoVetor = 3650;
+            int VetorIndice[TamanhoVetor];
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
 
@@ -1274,6 +1280,7 @@ int main() {
             }
           } else if(n == 7){
             TamanhoVetor = 3650;
+            int VetorIndice[730];
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
 
@@ -1332,6 +1339,7 @@ int main() {
             }
           } else if(n == 8){
             TamanhoVetor = 3650;
+            int VetorIndice[TamanhoVetor];
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
 
@@ -1390,6 +1398,7 @@ int main() {
             }
           } else if(n == 9){
             TamanhoVetor = 36500;
+            int VetorIndice[7300];
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
 
@@ -1426,17 +1435,14 @@ int main() {
                   fscanf(f, "%s", palavra);
                   strcpy(Hr, palavra);
                   setHr_pouso(&voo, Hr);
-                  printf("%s\n",Hr);
 
                   fscanf(f, "%s", palavra);
                   strcpy(Aero, palavra);
                   setAeroporto_dec(&voo, Aero);
-                  printf("%s\n",Aero );
 
                   fscanf(f, "%s", palavra);
                   strcpy(Aero, palavra);
                   setAeroporto_pouso(&voo, Aero);
-                  printf("%s\n",Aero );
 
                   fscanf(f, "%s", palavra);
                   if(strlen(palavra) == 1){
@@ -1453,6 +1459,7 @@ int main() {
             }
           } else if(n == 10){
             TamanhoVetor = 36500;
+            int VetorIndice[TamanhoVetor];
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
 
@@ -1513,6 +1520,7 @@ int main() {
             }
           } else if(n == 11){
             TamanhoVetor = 36500;
+            int VetorIndice[7300];
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
 
@@ -1573,6 +1581,7 @@ int main() {
             }
           } else if(n == 12){
             TamanhoVetor = 36500;
+            int VetorIndice[TamanhoVetor];
             AlocaVetor(&vet, TamanhoVetor);
             AlocaVetor(&vet1, TamanhoVetor);
 

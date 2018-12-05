@@ -1422,22 +1422,21 @@ int main() {
                   fscanf(f, "%s", palavra);
                   strcpy(Hr, palavra);
                   setHr_dec(&voo, Hr);
-                  printf("%s\n", voo.Hr_dec);
 
                   fscanf(f, "%s", palavra);
                   strcpy(Hr, palavra);
                   setHr_pouso(&voo, Hr);
-                  printf("%s\n", voo.Hr_pouso);
+                  printf("%s\n",Hr);
 
                   fscanf(f, "%s", palavra);
                   strcpy(Aero, palavra);
                   setAeroporto_dec(&voo, Aero);
-                  printf("%s\n", voo.aeroporto_dec);
+                  printf("%s\n",Aero );
 
                   fscanf(f, "%s", palavra);
                   strcpy(Aero, palavra);
                   setAeroporto_pouso(&voo, Aero);
-                  printf("%s\n", voo.aeroporto_pouso);
+                  printf("%s\n",Aero );
 
                   fscanf(f, "%s", palavra);
                   if(strlen(palavra) == 1){

@@ -30,12 +30,11 @@ int main() {
         printf("===================== Menu =====================\n");
         printf("              Escolha um Cenario\n");
         printf("================================================\n");
-        printf("Entre:");
-        while(n != 1 && n != 2 && n != 2 && n != 3 && 4 != 5 && n != 6 && n != 7 && n != 8 && n != 9 && n != 10 && n != 11 && n != 12){
-          printf("Digite a opcao desejada:");
+        while(n != 1 && n != 2 && n != 2 && n != 3 && n != 4 && n != 5 && n != 6 && n != 7 && n != 8 && n != 9 && n != 10 && n != 11 && n != 12){
+          printf("Entre com cenario:");
           scanf("%d",&n);
-          if(n != 1 && n != 2 && n != 2 && n != 3 && 4 != 5 && n != 6 && n != 7 && n != 8 && n != 9 && n != 10 && n != 11 && n != 12){
-            printf("Opcao invalida!\n");}}
+          if(n != 1 && n != 2 && n != 2 && n != 3 && n != 4 && n != 5 && n != 6 && n != 7 && n != 8 && n != 9 && n != 10 && n != 11 && n != 12){
+            printf("Cenario invalido!\n");}}
 
         if(n == 1){
           TamanhoVetor = 365;
@@ -922,17 +921,21 @@ int main() {
 
       } else if(n == 2){
         while(1){
+        n=0;
         FILE *f;
         char nome_arquivo[20], palavra[10];
         int n=0;
         printf("===================== Menu =====================\n");
         printf("              Escolha um Cenario\n");
         printf("================================================\n");
-        printf("Entre com o cenario:");
-        scanf("%d", &n);
-        if(n!=0 && n<=12){
+        while(n != 1 && n != 2 && n != 2 && n != 3 && n != 4 && n != 5 && n != 6 && n != 7 && n != 8 && n != 9 && n != 10 && n != 11 && n != 12){
+          printf("Entre com o cenario:");
+          scanf("%d",&n);
+          if(n != 1 && n != 2 && n != 2 && n != 3 && n != 4 && n != 5 && n != 6 && n != 7 && n != 8 && n != 9 && n != 10 && n != 11 && n != 12){
+            printf("Cenario invalido!\n");}}
+
         printf("\nDigite o nome do arquivo que deseja abrir:");
-        scanf("%s",nome_arquivo);}
+        scanf("%s",nome_arquivo);
 
         f = fopen(nome_arquivo,"r");
         if(f == NULL){
@@ -1768,8 +1771,8 @@ int main() {
                   else{
                     printf("Opcao invalida!\n");
                   }
-            }
-            break;}
+            }break;
+           }
          }
       }
 

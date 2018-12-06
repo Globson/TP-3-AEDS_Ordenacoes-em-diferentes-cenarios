@@ -36,7 +36,7 @@ void SelectSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int
       *Compara = *Compara+1;
       if(Vetor->ListaIdMatriz[j].idMatriz < Vetor->ListaIdMatriz[min].idMatriz){
         min = j;
-        *Movimenta = *Movimenta+1;
+        *Movimenta = *Movimenta+1; //Movimentacao com elemento diferente de si proprio so ocorre quando entra-se no if//
       }
       aux = Vetor->ListaIdMatriz[min];
       Vetor->ListaIdMatriz[min] = Vetor->ListaIdMatriz[i];
@@ -52,14 +52,15 @@ void InsertSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int
   for(i=1; i<TamanhoVetor; i++){
     aux = Vetor->ListaIdMatriz[i];
     j = i-1;
-    *Compara = *Compara+1;
+    *Compara = *Compara+2;
 
-    while((j>=0) && (aux.idMatriz < Vetor->ListaIdMatriz[j].idMatriz)){
+    while((j>=0) && (aux.idMatriz < Vetor->ListaIdMatriz[j].idMatriz)){ //2 comparacoes dentro do parametro do while//
       Vetor->ListaIdMatriz[j+1] = Vetor->ListaIdMatriz[j];
       j--;
-      *Movimenta = *Movimenta+1;
-      *Compara = *Compara+1;}
+      *Movimenta = *Movimenta+1; //Todas as movimentacoes do insertion//
+      *Compara = *Compara+2;}
       Vetor->ListaIdMatriz[j+1] = aux;
+
   }
 }
 
@@ -79,8 +80,9 @@ void ShellSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int 
       while(Vetor->ListaIdMatriz[j - h].idMatriz > aux.idMatriz){
         Vetor->ListaIdMatriz[j] = Vetor->ListaIdMatriz[j-h];
         j -= h;
-        if(j<h)break;
         *Movimenta = *Movimenta+1;
+        *Compara = *Compara+2;
+        if(j<h)break;
       }
       Vetor->ListaIdMatriz[j] = aux;
     }
@@ -98,10 +100,12 @@ void Particao (int esq,int dir,int* i, int* j, TipoVetor *a, long int *Compara, 
       (*i)++;
       *Compara = *Compara+1;
     }
+    *Compara = *Compara+1;
     while (pivo.idMatriz < a->ListaIdMatriz[*j].idMatriz){
       (*j)--;
       *Compara = *Compara+1;
     }
+    *Compara = *Compara+1;
     if(*i<=*j){
       aux = a->ListaIdMatriz[*i];
       a->ListaIdMatriz[*i] = a->ListaIdMatriz[*j];
@@ -116,13 +120,14 @@ void Particao (int esq,int dir,int* i, int* j, TipoVetor *a, long int *Compara, 
 void Ordena (int e, int d, TipoVetor *A, long int *Compara, long int *Movimenta){  //Funcao pertencente a Quicksort//
   int i,j;
   Particao(e,d,&i,&j,A, Compara, Movimenta);
+  *Compara = *Compara+1;
   if(e<j) Ordena(e,j,A, Compara, Movimenta);
+  *Compara = *Compara+1;
   if(i<d) Ordena(i,d,A, Compara, Movimenta);
 
 }
 
 void QuickSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int *Movimenta){  //QuickSort adaptado para vetor de matrizes e com contadores de comparacoes e movimentacoes//
-  *Compara = *Compara+1;
   Ordena(0, TamanhoVetor-1, Vetor, Compara, Movimenta);
 }
 

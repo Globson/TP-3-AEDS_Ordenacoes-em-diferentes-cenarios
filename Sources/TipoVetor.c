@@ -1,14 +1,14 @@
 #include "../Headers/TipoVetor.h"
 
-void AlocaVetor(TipoVetor* vetor, unsigned int TamanhoVetor){
+void AlocaVetor(TipoVetor* vetor, unsigned int TamanhoVetor){     //Funcao para alocacao dinamica de memoria para vetores principais//
   vetor->ListaIdMatriz = (TipoMatriz*) malloc (TamanhoVetor*sizeof(TipoMatriz));
 }
 
-void DesalocaVetor(TipoVetor* vetor){
+void DesalocaVetor(TipoVetor* vetor){  //Funcao para liberar memorias dinamicamente alocadas//
   free(vetor->ListaIdMatriz);
 }
 
-void BubbleSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int *Movimenta){
+void BubbleSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int *Movimenta){  //BubbleSort adaptado para vetor de matrizes e com contadores de comparacoes e movimentacoes//
   int i,j;
   TipoMatriz aux;
 
@@ -26,7 +26,7 @@ void BubbleSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int
   }
 }
 
-void SelectSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int *Movimenta){
+void SelectSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int *Movimenta){ //SelectSort adaptado para vetor de matrizes e com contadores de comparacoes e movimentacoes//
   int i,j,min;
   TipoMatriz aux;
 
@@ -45,7 +45,7 @@ void SelectSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int
   }
 }
 
-void InsertSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int *Movimenta){
+void InsertSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int *Movimenta){  //InsertSort adaptado para vetor de matrizes e com contadores de comparacoes e movimentacoes//
   int i,j;
   TipoMatriz aux;
 
@@ -63,7 +63,7 @@ void InsertSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int
   }
 }
 
-void ShellSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int *Movimenta){
+void ShellSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int *Movimenta){  ////ShellSort adaptado para vetor de matrizes e com contadores de comparacoes e movimentacoes//
   int i,j,h=1;
   TipoMatriz aux;
 
@@ -87,7 +87,7 @@ void ShellSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int 
   } while(h != 1);
 }
 
-void Particao (int esq,int dir,int* i, int* j, TipoVetor *a, long int *Compara, long int *Movimenta){
+void Particao (int esq,int dir,int* i, int* j, TipoVetor *a, long int *Compara, long int *Movimenta){ //Funcao pertencente a Quicksort//
   TipoMatriz pivo,aux;
   *i=esq;
   *j=dir;
@@ -113,7 +113,7 @@ void Particao (int esq,int dir,int* i, int* j, TipoVetor *a, long int *Compara, 
   }while(*i<*j);
 }
 
-void Ordena (int e, int d, TipoVetor *A, long int *Compara, long int *Movimenta){
+void Ordena (int e, int d, TipoVetor *A, long int *Compara, long int *Movimenta){  //Funcao pertencente a Quicksort//
   int i,j;
   Particao(e,d,&i,&j,A, Compara, Movimenta);
   if(e<j) Ordena(e,j,A, Compara, Movimenta);
@@ -121,12 +121,12 @@ void Ordena (int e, int d, TipoVetor *A, long int *Compara, long int *Movimenta)
 
 }
 
-void QuickSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int *Movimenta){
+void QuickSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int *Movimenta){  //QuickSort adaptado para vetor de matrizes e com contadores de comparacoes e movimentacoes//
   *Compara = *Compara+1;
   Ordena(0, TamanhoVetor-1, Vetor, Compara, Movimenta);
 }
 
-void HeapSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int *Movimenta){
+void HeapSort (TipoVetor *Vetor, int TamanhoVetor, long int *Compara, long int *Movimenta){  //HeapSort adaptado para vetor de matrizes e com contadores de comparacoes e movimentacoes//
   int i = TamanhoVetor/2;
   int pai, filho;
 

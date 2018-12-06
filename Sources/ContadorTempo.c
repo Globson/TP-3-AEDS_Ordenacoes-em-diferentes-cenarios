@@ -1,5 +1,6 @@
 #include "../Headers/ContadorTempo.h"
 
+                                                            //Funcoes para contagem de tempo de execucao//
 void IniciarTimer(Timer *timer){
     timer->tempoInicial = clock();
 }

@@ -25,13 +25,13 @@ int main() {
         if(n != 1 && n != 2){
           printf("Opcao invalida!\n");}}
 
-      if(n == 1){
+      if(n == 1){ //Entrada automatica//
         n=0;
         printf("===================== Menu =====================\n");
         printf("              Escolha um Cenario\n");
         printf("================================================\n");
         while(n != 1 && n != 2 && n != 2 && n != 3 && n != 4 && n != 5 && n != 6 && n != 7 && n != 8 && n != 9 && n != 10 && n != 11 && n != 12){
-          printf("Entre com cenario:");
+          printf("Entre com cenario:");                                                //Forçando entrada de valor valido para cenario//
           scanf("%d",&n);
           if(n != 1 && n != 2 && n != 2 && n != 3 && n != 4 && n != 5 && n != 6 && n != 7 && n != 8 && n != 9 && n != 10 && n != 11 && n != 12){
             printf("Cenario invalido!\n");}}
@@ -48,10 +48,10 @@ int main() {
             }
 
             for(int i=0; i<73; i++){
-              int r = rand()%73;
+              int r = rand()%73;    //Selecionando indices para matrizes aleatorias//
               for(int j=0; j<10; j++){
                  IniciarVoo(&voo);
-
+                                              //Atribuindo valores aleatorios para voos//
                  auxHr = rand()%2 + '0';
                  if(auxHr == '2'){
                    auxHr1 = rand()%3 + '0';
@@ -95,11 +95,11 @@ int main() {
                  pista = rand()%10;
                  setId_pista(&voo, pista);
 
-                 Inserir(voo, &vet.ListaIdMatriz[r]);
+                 Inserir(voo, &vet.ListaIdMatriz[r]);     //Inserindo voos//
                  Inserir(voo, &vet1.ListaIdMatriz[r]);
               }
             }
-
+                                              //Procedimentos de geracao de voos se repetem ate fim de parte interativa//
         } else if(n == 2){
           TamanhoVetor = 365;
           AlocaVetor(&vet, TamanhoVetor);
@@ -804,7 +804,7 @@ int main() {
 
         }
 
-        while(1){
+        while(1){                     //Menu de ordenacoes//
               printf("===================== Menu =====================\n");
               printf("              Como Deseja Ordenar?\n");
               printf(" 1 - BubbleSort   2 - SelectSort  3 - InsertSort\n");
@@ -814,7 +814,7 @@ int main() {
               printf("Digite a opcao desejada:");
               scanf("%d", &m);
 
-              if(m == 1){
+              if(m == 1){    //Bubble//
                 compara = 0;
                 movimenta = 0;
                 IniciarTimer(&timer);
@@ -829,7 +829,7 @@ int main() {
                 for(int i=0; i<TamanhoVetor; i++){
                 vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-              } else if(m == 2){
+              } else if(m == 2){ //Select//
                 compara = 0;
                 movimenta = 0;
                 IniciarTimer(&timer);
@@ -844,7 +844,7 @@ int main() {
                 for(int i=0; i<TamanhoVetor; i++){
                 vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-              } else if(m == 3){
+              } else if(m == 3){ //Insert//
                 compara = 0;
                 movimenta = 0;
                 IniciarTimer(&timer);
@@ -859,7 +859,7 @@ int main() {
                 for(int i=0; i<TamanhoVetor; i++){
                 vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-              } else if(m == 4){
+              } else if(m == 4){ //Shell//
                 compara = 0;
                 movimenta = 0;
                 IniciarTimer(&timer);
@@ -873,7 +873,7 @@ int main() {
                 printf("================================================\n");
                 for(int i=0; i<TamanhoVetor; i++){
                 vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
-              } else if(m == 5){
+              } else if(m == 5){ //Quick//
                 compara = 0;
                 movimenta = 0;
                 IniciarTimer(&timer);
@@ -888,7 +888,7 @@ int main() {
                 for(int i=0; i<TamanhoVetor; i++){
                 vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-              } else if(m == 6){
+              } else if(m == 6){ //Heap//
                 compara = 0;
                 movimenta = 0;
                 IniciarTimer(&timer);
@@ -903,7 +903,7 @@ int main() {
                 for(int i=0; i<TamanhoVetor; i++){
                 vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-              } else if(m == 7){
+              } else if(m == 7){ //Finalização//
                   int f = 0;
                 printf("\nDeseja realmente finalizar a execucao do programa?\n\t1.Sim\n\t2.Nao\n");
                 while(f != 1 && f != 2){
@@ -924,7 +924,7 @@ int main() {
                 }
             }
 
-      } else if(n == 2){
+      } else if(n == 2){  //Entrada por arquivo//
         while(1){
         n=0;
         FILE *f;
@@ -934,21 +934,21 @@ int main() {
         printf("              Escolha um Cenario\n");
         printf("================================================\n");
         while(n != 1 && n != 2 && n != 2 && n != 3 && n != 4 && n != 5 && n != 6 && n != 7 && n != 8 && n != 9 && n != 10 && n != 11 && n != 12){
-          printf("Entre com o cenario:");
+          printf("Entre com o cenario:");                                                 //Forçando entrada de valor valido para cenario//
           scanf("%d",&n);
           if(n != 1 && n != 2 && n != 2 && n != 3 && n != 4 && n != 5 && n != 6 && n != 7 && n != 8 && n != 9 && n != 10 && n != 11 && n != 12){
             printf("Cenario invalido!\n");}}
 
-        printf("\nDigite o nome do arquivo que deseja abrir:");
+        printf("\nDigite o nome do arquivo que deseja abrir:");    //Abrindo arquivo//
         scanf("%s",nome_arquivo);
 
         f = fopen(nome_arquivo,"r");
         if(f == NULL){
-        printf("\n\tErro!Nao foi possivel abrir arquivo!\n");}
+        printf("\n\tErro!Nao foi possivel abrir arquivo!\n");}  //Caso erro de abertura, programa solicita novamente entrada//
         else{
 
           printf("\n\tArquivo aberto com sucesso!\n");
-          if(n == 1){
+          if(n == 1){  //Leitura de arquivo e escrita em matrizes com base no conteudo do arquivo//
             TamanhoVetor = 365;
             int VetorIndice[73];
             AlocaVetor(&vet, TamanhoVetor);
@@ -973,7 +973,7 @@ int main() {
 
             for(int i=0; i<73; i++){
               for(int j=0; j<10; j++){
-                  IniciarVoo(&voo);
+                  IniciarVoo(&voo);       //Recebendo dados dos voos//
 
                   fscanf(f, "%s", palavra);
                   strcpy(Hr, palavra);
@@ -999,10 +999,10 @@ int main() {
                   }
                   setId_pista(&voo, pista);
 
-                  Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);
+                  Inserir(voo, &vet.ListaIdMatriz[VetorIndice[i]]);   //Inserindo em posições do vetor//
                   Inserir(voo, &vet1.ListaIdMatriz[VetorIndice[i]]);
 
-              }
+              }                     //Leitura e escrita de dados de voos se repetem para todos os cenarios//
             }
           } else if(n == 2){
             TamanhoVetor = 365;
@@ -1658,7 +1658,7 @@ int main() {
           fclose(f);
 
 
-          while(1){
+          while(1){                     //Menu de ordenacao//
                 printf("===================== Menu =====================\n");
                 printf("              Como Deseja Ordenar?\n");
                 printf(" 1 - BubbleSort   2 - SelectSort  3 - InsertSort\n");
@@ -1668,7 +1668,7 @@ int main() {
                 printf("Digite a opcao desejada:");
                 scanf("%d", &m);
 
-                if(m == 1){
+                if(m == 1){ //Bubble//
                   compara = 0;
                   movimenta = 0;
                   IniciarTimer(&timer);
@@ -1683,7 +1683,7 @@ int main() {
                   for(int i=0; i<TamanhoVetor; i++){
                   vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-                } else if(m == 2){
+                } else if(m == 2){ //Select//
                   compara = 0;
                   movimenta = 0;
                   IniciarTimer(&timer);
@@ -1698,7 +1698,7 @@ int main() {
                   for(int i=0; i<TamanhoVetor; i++){
                   vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-                } else if(m == 3){
+                } else if(m == 3){  //Insert//
                   compara = 0;
                   movimenta = 0;
                   IniciarTimer(&timer);
@@ -1713,7 +1713,7 @@ int main() {
                   for(int i=0; i<TamanhoVetor; i++){
                   vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-                } else if(m == 4){
+                } else if(m == 4){ //Shell//
                   compara = 0;
                   movimenta = 0;
                   IniciarTimer(&timer);
@@ -1727,7 +1727,7 @@ int main() {
                   printf("================================================\n");
                   for(int i=0; i<TamanhoVetor; i++){
                   vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
-                } else if(m == 5){
+                } else if(m == 5){ //Quick//
                   compara = 0;
                   movimenta = 0;
                   IniciarTimer(&timer);
@@ -1742,7 +1742,7 @@ int main() {
                   for(int i=0; i<TamanhoVetor; i++){
                   vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-                } else if(m == 6){
+                } else if(m == 6){ //Heap//
                   compara = 0;
                   movimenta = 0;
                   IniciarTimer(&timer);
@@ -1757,7 +1757,7 @@ int main() {
                   for(int i=0; i<TamanhoVetor; i++){
                   vet1.ListaIdMatriz[i] = vet.ListaIdMatriz[i];}
 
-                } else if(m == 7){
+                } else if(m == 7){ //Finalizacao//
                     int f = 0;
                   printf("\nDeseja realmente finalizar a execucao do programa?\n\t1.Sim\n\t2.Nao\n");
                   while(f != 1 && f != 2){
@@ -1776,7 +1776,7 @@ int main() {
                   else{
                     printf("Opcao invalida!\n");
                   }
-            }break;
+            }break; //parada do while do arquivo//
            }
          }
       }
